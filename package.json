@@ -1,0 +1,10 @@
+{
+  "name": "@webex/component-adapter-interfaces",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webex/component-adapter-interfaces.git"
+  },
+  "author": "devsupport@webex.com",
+  "license": "MIT"
+}
