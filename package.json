@@ -13,6 +13,7 @@
     "test:coverage": "jest --coverage",
     "test:eslint": "eslint src/"
   },
+  "description": "Adapter interfaces for Webex Components (https://github.com/webex/components)",
   "repository": {
     "type": "git",
     "url": "https://github.com/webex/component-adapter-interfaces.git"
