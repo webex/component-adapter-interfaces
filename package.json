@@ -60,5 +60,25 @@
   "jest-junit": {
     "outputDirectory": "test_results/jest",
     "outputName": "results.xml"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "scope-case": [
+        2,
+        "always",
+        [
+          "lower-case",
+          "pascal-case"
+        ]
+      ]
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
