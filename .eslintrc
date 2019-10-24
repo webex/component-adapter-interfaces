@@ -47,5 +47,13 @@
       }
     ],
     "require-jsdoc": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.js"], // Interfaces utilize unused variables
+      "rules": {
+        "no-unused-vars": "off"
+      }
+    }
+  ]
 }
