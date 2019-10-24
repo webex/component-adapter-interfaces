@@ -32,15 +32,15 @@ module.exports = {
             label: "Package JSON"
           },
           {
-            path: "dist/WebexComponentAdapterInterfaces.cjs.js",
+            path: "dist/webexComponentAdapterInterfaces.cjs.js",
             label: "Common JS distribution"
           },
           {
-            path: "dist/WebexComponentAdapterInterfaces.umd.js",
+            path: "dist/webexComponentAdapterInterfaces.umd.js",
             label: "Universal Module Definition JS distribution"
           },
           {
-            path: "dist/WebexComponentAdapterInterfaces.esm.js",
+            path: "dist/webexComponentAdapterInterfaces.esm.js",
             label: "ECMAScript module JS distribution"
           }
         ]
