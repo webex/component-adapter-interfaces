@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/webex/component-adapter-interfaces/compare/v1.2.1...v1.3.0) (2019-10-25)
+
+
+### Features
+
+* **ActivitiesAdapter:** implement adapter ([1e3a672](https://github.com/webex/component-adapter-interfaces/commit/1e3a6724316f9cd8170158088c2f1b627da3a4b4))
+
 ## [1.2.1](https://github.com/webex/component-adapter-interfaces/compare/v1.2.0...v1.2.1) (2019-10-25)
 
 
