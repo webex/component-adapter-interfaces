@@ -1,6 +1,8 @@
 {
   "name": "@webex/component-adapter-interfaces",
   "version": "1.2.0",
+  "main": "dist/webexComponentAdapterInterfaces.cjs.js",
+  "module": "dist/webexComponentAdapterInterfaces.esm.js",
   "scripts": {
     "build": "rollup -c",
     "prettier": "prettier \"src/**/*.*(js)\"",
