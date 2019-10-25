@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/webex/component-adapter-interfaces/compare/v1.2.0...v1.2.1) (2019-10-25)
+
+
+### Bug Fixes
+
+* **index:** add and export RoomsAdapter ([04acae7](https://github.com/webex/component-adapter-interfaces/commit/04acae7127cd1f8a58fc81dfb1b81b26929fc734))
+* **release:** define path to import from ([5cc2b86](https://github.com/webex/component-adapter-interfaces/commit/5cc2b866a891b2914665c38fe665c000b9fd58c6))
+
 # [1.2.0](https://github.com/webex/component-adapter-interfaces/compare/v1.1.0...v1.2.0) (2019-10-25)
 
 
