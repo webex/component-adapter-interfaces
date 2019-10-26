@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/webex/component-adapter-interfaces/compare/v1.3.0...v1.3.1) (2019-10-26)
+
+
+### Bug Fixes
+
+* **ActivitiesAdapter:** export Activities adapter ([dab06ca](https://github.com/webex/component-adapter-interfaces/commit/dab06ca2ec55f7860eb623151a65a06b0bee13c2))
+
 # [1.3.0](https://github.com/webex/component-adapter-interfaces/compare/v1.2.1...v1.3.0) (2019-10-25)
 
 
