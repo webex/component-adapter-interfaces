@@ -13,7 +13,7 @@ describe('People Adapter Interface', () => {
     expect(isObservable(peopleAdapter.getPerson())).toBeTruthy();
   });
 
-  test('getPerson() throws a proper error message', (done) => {
+  test('getPerson() errors because it needs to be defined', (done) => {
     peopleAdapter.getPerson('id').subscribe(
       () => {},
       (error) => {
