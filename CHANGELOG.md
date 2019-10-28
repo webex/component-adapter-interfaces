@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/webex/component-adapter-interfaces/compare/v1.3.1...v1.3.2) (2019-10-28)
+
+
+### Bug Fixes
+
+* **adapters:** export enums ([e19e260](https://github.com/webex/component-adapter-interfaces/commit/e19e26024b325955d933a84c429787a63c67ca30))
+
 ## [1.3.1](https://github.com/webex/component-adapter-interfaces/compare/v1.3.0...v1.3.1) (2019-10-26)
 
 
