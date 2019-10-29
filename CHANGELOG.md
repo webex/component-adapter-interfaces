@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/webex/component-adapter-interfaces/compare/v1.3.2...v1.4.0) (2019-10-29)
+
+
+### Features
+
+* **MeetingsAdapter:** define adapter ([cb90b52](https://github.com/webex/component-adapter-interfaces/commit/cb90b52a882e7c84612bec9f639e1af4f042b8ee))
+
 ## [1.3.2](https://github.com/webex/component-adapter-interfaces/compare/v1.3.1...v1.3.2) (2019-10-28)
 
 
