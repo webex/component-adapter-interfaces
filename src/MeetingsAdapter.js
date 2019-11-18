@@ -19,6 +19,16 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * @typedef {Object}  MediaStreamTrack
+ * @see {@link MediaStreamTrack|https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack}
+ */
+
+/**
+ * @typedef {Object}  MediaStream
+ * @see {@link MediaStream|https://developer.mozilla.org/en-US/docs/Web/API/MediaStream}
+ */
+
+/**
  * The control that may modify a meeting or meeting state.
  *
  * @typedef {Object}  MeetingControl
@@ -53,6 +63,8 @@ export const MeetingControlState = {
  * This is a base class that defines the interface that maps meetings data.
  * Developers that want to extend `MeetingsAdapter` must implement all of its methods,
  * adhering to the exact parameters and structure of the returned objects.
+ *
+ * @interface
  */
 export default class MeetingsAdapter extends WebexAdapter {
   /**
