@@ -6,27 +6,35 @@ import WebexAdapter from './WebexAdapter';
  * A meeting object that allows users to have a WebRTC meeting.
  *
  * @typedef {Object}  Meeting
- * @property {string}            ID The meeting identifier.
- * @property {string}            title The title of the meeting.
- * @property {string}            startTime The time and date of the start of the meeting. Must be a valid date-time string.
- * @property {string}            endTime The time and date of the end of the meeting. Must be a valid date-time string.
- * @property {MediaStreamTrack}  localVideo The local video stream track.
- * @property {MediaStreamTrack}  localAudio The local audio stream track.
- * @property {MediaStream}       localShare The local media share stream.
- * @property {MediaStreamTrack}  remoteVideo The remote video stream track.
- * @property {MediaStreamTrack}  remoteAudio The remote audio stream track.
- * @property {MediaStream}       remoteShare The remote media share stream.
+ * @property {string}            ID           The meeting identifier.
+ * @property {string}            title        The title of the meeting.
+ * @property {string}            startTime    The time and date of the start of the meeting. Must be a valid date-time string.
+ * @property {string}            endTime      The time and date of the end of the meeting. Must be a valid date-time string.
+ * @property {MediaStreamTrack}  localVideo   The local video stream track.
+ * @property {MediaStreamTrack}  localAudio   The local audio stream track.
+ * @property {MediaStream}       localShare   The local media share stream.
+ * @property {MediaStreamTrack}  remoteVideo  The remote video stream track.
+ * @property {MediaStreamTrack}  remoteAudio  The remote audio stream track.
+ * @property {MediaStream}       remoteShare  The remote media share stream.
  */
 
 /**
  * The control that may modify a meeting or meeting state.
  *
  * @typedef {Object}  MeetingControl
- * @property {string}    ID The meeting control ID or name.
- * @property {string}    alt The text to display when user hovers over control.
- * @property {function}  action A function that performs the control action. Must return a `MeetingControlState` value.
- * @property {string}    icon Momentum-ui icon name to display for the meeting control.
- * @property {string}    text Text to display on the meeting control. If there is an icon and text, text takes precedence.
+ * @property {string}    ID       The meeting control ID or name.
+ * @property {function}  action   A function that performs the control action. Must not return a value, as it must perform side-effects only.
+ * @property {function}  display  A function that returns an observable that emits MeetingControlDisplay objects.
+ */
+
+/**
+ * Display options of a meeting control.
+ *
+ * @typedef {Object}  MeetingControlDisplay
+ * @property {MeetingControlState}  state    Current state of the meeting control
+ * @property {string}               tooltip  The text to display when user hovers over control.
+ * @property {string}               icon     Momentum-ui icon name to display for the meeting control.
+ * @property {string}               text     Text to display on the meeting control. If there is an icon and text, text takes precedence.
  */
 
 /**
