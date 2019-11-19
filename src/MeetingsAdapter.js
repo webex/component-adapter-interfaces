@@ -29,12 +29,27 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
- * The control that may modify a meeting or meeting state.
+ * A control/action that may modify a meeting or meeting state.
  *
  * @typedef {Object}  MeetingControl
- * @property {string}    ID       The meeting control ID or name.
- * @property {function}  action   A function that performs the control action. Must not return a value, as it must perform side-effects only.
- * @property {function}  display  A function that returns an observable that emits MeetingControlDisplay objects.
+ * @property {string}                         ID       The meeting control ID or name.
+ * @property {MeetingControlAction}           action   A function that performs the control action. Must not return a value, as it must perform side-effects only.
+ * @property {MeetingControlDisplayFunction}  display  A function that returns an observable that emits MeetingControlDisplay objects.
+ */
+
+/**
+ * Action a meeting control performs. It must perform a side-effect only.
+ *
+ * @typedef {function}  MeetingControlAction
+ * @param {string}  meetingID  ID of the meeting object for which to perform side-effect.
+ * @returns {void}
+ */
+
+/**
+ * Function that returns an obersvable that emits a meeting control display values.
+ *
+ * @typedef {function}  MeetingControlDisplayFunction
+ * @returns {Observable.<MeetingControlDisplay>}
  */
 
 /**

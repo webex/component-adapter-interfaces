@@ -9,7 +9,7 @@ import WebexAdapter from './WebexAdapter';
  * @typedef {Object}  Room
  * @property {string}    ID     The room identifier.
  * @property {string}    title  The room title.
- * @property {RoomType}  type   The type of the room. @see RoomType enum
+ * @property {RoomType}  type   The type of the room. @see {@link RoomType} enum
  */
 
 /**
@@ -37,6 +37,8 @@ export const RoomType = {
  * `RoomsAdapter` handles data of a room such as details about that room but also
  * activities that happened/will happen within that room. Activities are expected
  * to be lazy loaded, and therefore, chunked.
+ *
+ * @interface
  */
 export default class RoomsAdapter extends WebexAdapter {
   /**
