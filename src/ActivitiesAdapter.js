@@ -18,6 +18,8 @@ import WebexAdapter from './WebexAdapter';
  * This is a base class that defines the interface that maps activity data.
  * Developers that want to extend `ActivitiesAdapter` must implement all of its methods,
  * adhering to the exact parameters and structure of the returned objects.
+ *
+ * @interface
  */
 export default class ActivitiesAdapter extends WebexAdapter {
   /**
