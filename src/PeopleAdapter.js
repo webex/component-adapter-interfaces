@@ -14,7 +14,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {string}             nickName    The short name for the person.
  * @property {string}             avatar      The full url to the person's avatar.
  * @property {string}             orgID       The ID of the organization the person belongs to.
- * @property {null|PersonStatus}  status      The presence status of the user. @see PersonStatus enum
+ * @property {null|PersonStatus}  status      The presence status of the user. @see {@link PersonStatus} enum
  */
 
 /**
@@ -40,6 +40,8 @@ export const PersonStatus = {
  * This is a base class that defines the interface that maps people data.
  * Developers that want to extend `PeopleAdapter` must implement all of its methods,
  * adhering to the exact parameters and structure of the returned objects.
+ *
+ * @interface
  */
 export default class PeopleAdapter extends WebexAdapter {
   /**
