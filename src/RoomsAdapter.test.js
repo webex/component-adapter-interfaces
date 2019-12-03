@@ -9,6 +9,10 @@ describe('Rooms Adapter Interface', () => {
     roomsAdapter = new RoomsAdapter();
   });
 
+  afterEach(() => {
+    roomsAdapter = null;
+  });
+
   test('getRoom() returns an observable', () => {
     expect(isObservable(roomsAdapter.getRoom())).toBeTruthy();
   });
@@ -56,9 +60,5 @@ describe('Rooms Adapter Interface', () => {
       expect(roomsAdapter.hasMoreActivities('ID')).toThrowError();
       // eslint-disable-next-line no-empty
     } catch (error) {}
-  });
-
-  afterEach(() => {
-    roomsAdapter = null;
   });
 });

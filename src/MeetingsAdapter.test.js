@@ -9,6 +9,10 @@ describe('Meetings Adapter Interface', () => {
     meetingsAdapter = new MeetingsAdapter();
   });
 
+  afterEach(() => {
+    meetingsAdapter = null;
+  });
+
   test('getMeeting() returns an observable', () => {
     expect(isObservable(meetingsAdapter.getMeeting())).toBeTruthy();
   });
@@ -25,9 +29,5 @@ describe('Meetings Adapter Interface', () => {
 
   test('meetingControls property exists', () => {
     expect(meetingsAdapter).toHaveProperty('meetingControls');
-  });
-
-  afterEach(() => {
-    meetingsAdapter = null;
   });
 });

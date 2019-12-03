@@ -9,6 +9,10 @@ describe('Activities Adapter Interface', () => {
     activitiesAdapter = new ActivitiesAdapter();
   });
 
+  afterEach(() => {
+    activitiesAdapter = null;
+  });
+
   test('getActivity() returns an observable', () => {
     expect(isObservable(activitiesAdapter.getActivity())).toBeTruthy();
   });
@@ -21,9 +25,5 @@ describe('Activities Adapter Interface', () => {
         done();
       }
     );
-  });
-
-  afterEach(() => {
-    activitiesAdapter = null;
   });
 });
