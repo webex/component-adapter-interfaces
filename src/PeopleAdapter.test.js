@@ -9,6 +9,10 @@ describe('People Adapter Interface', () => {
     peopleAdapter = new PeopleAdapter();
   });
 
+  afterEach(() => {
+    peopleAdapter = null;
+  });
+
   test('getPerson() returns an observable', () => {
     expect(isObservable(peopleAdapter.getPerson())).toBeTruthy();
   });
@@ -21,9 +25,5 @@ describe('People Adapter Interface', () => {
         done();
       }
     );
-  });
-
-  afterEach(() => {
-    peopleAdapter = null;
   });
 });

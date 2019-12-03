@@ -8,11 +8,11 @@ describe('Webex Adapter Interface', () => {
     webexAdapter = new WebexAdapter(datasource);
   });
 
-  test('WebexAdapter stores the data source', () => {
-    expect(webexAdapter.datasource).toBe(datasource);
-  });
-
   afterEach(() => {
     webexAdapter = null;
+  });
+
+  test('WebexAdapter stores the data source', () => {
+    expect(webexAdapter.datasource).toBe(datasource);
   });
 });
