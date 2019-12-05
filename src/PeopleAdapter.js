@@ -45,6 +45,20 @@ export const PersonStatus = {
  */
 export default class PeopleAdapter extends WebexAdapter {
   /**
+   * Returns an observable that emits person data of the current user.
+   *
+   * Current user is be defined by the implementation. For instance,
+   * to instantiate the SDK, an access token must be given, "me" in that case
+   * is the owner of the access token for that SDK instance.
+   *
+   * @returns {Observable.<Person>}
+   * @memberof PeopleAdapter
+   */
+  getMe() {
+    return throwError(new Error('getMe() must be defined in PeopleAdapter'));
+  }
+
+  /**
    * Returns an observable that emits person data of the given ID.
    *
    * @param {string} ID ID of person to get.

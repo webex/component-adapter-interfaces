@@ -13,17 +13,35 @@ describe('People Adapter Interface', () => {
     peopleAdapter = null;
   });
 
-  test('getPerson() returns an observable', () => {
-    expect(isObservable(peopleAdapter.getPerson())).toBeTruthy();
+  describe('getPerson()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(peopleAdapter.getPerson())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      peopleAdapter.getPerson('id').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getPerson(ID) must be defined in PeopleAdapter');
+          done();
+        }
+      );
+    });
   });
 
-  test('getPerson() errors because it needs to be defined', (done) => {
-    peopleAdapter.getPerson('id').subscribe(
-      () => {},
-      (error) => {
-        expect(error.message).toBe('getPerson(ID) must be defined in PeopleAdapter');
-        done();
-      }
-    );
+  describe('getMe()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(peopleAdapter.getPerson())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      peopleAdapter.getPerson('id').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getPerson(ID) must be defined in PeopleAdapter');
+          done();
+        }
+      );
+    });
   });
 });
