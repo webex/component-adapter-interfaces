@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/webex/component-adapter-interfaces/compare/v1.4.1...v1.5.0) (2019-12-05)
+
+
+### Features
+
+* **PeopleAdapter:** add getMe method definition ([0172fd9](https://github.com/webex/component-adapter-interfaces/commit/0172fd90641eaa39803eeabfa218e5c879c50549))
+
 ## [1.4.1](https://github.com/webex/component-adapter-interfaces/compare/v1.4.0...v1.4.1) (2019-12-04)
 
 
