@@ -31,14 +31,14 @@ describe('People Adapter Interface', () => {
 
   describe('getMe()', () => {
     test('returns an observable', () => {
-      expect(isObservable(peopleAdapter.getPerson())).toBeTruthy();
+      expect(isObservable(peopleAdapter.getMe())).toBeTruthy();
     });
 
     test('errors because it needs to be defined', (done) => {
-      peopleAdapter.getPerson('id').subscribe(
+      peopleAdapter.getMe().subscribe(
         () => {},
         (error) => {
-          expect(error.message).toBe('getPerson(ID) must be defined in PeopleAdapter');
+          expect(error.message).toBe('getMe() must be defined in PeopleAdapter');
           done();
         }
       );
