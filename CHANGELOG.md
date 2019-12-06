@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/webex/component-adapter-interfaces/compare/v1.5.0...v1.6.0) (2019-12-06)
+
+
+### Features
+
+* **MeetingAdapter:** declare addLocalMedia method ([2fa250e](https://github.com/webex/component-adapter-interfaces/commit/2fa250ea7b3495750b0247c3855730aafaf0e60f))
+
 # [1.5.0](https://github.com/webex/component-adapter-interfaces/compare/v1.4.1...v1.5.0) (2019-12-05)
 
 
