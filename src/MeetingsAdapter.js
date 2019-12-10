@@ -8,13 +8,11 @@ import WebexAdapter from './WebexAdapter';
  * @typedef {Object}  Meeting
  * @property {string}            ID           The meeting identifier.
  * @property {string}            title        The title of the meeting.
- * @property {string}            startTime    The time and date of the start of the meeting. Must be a valid date-time string.
- * @property {string}            endTime      The time and date of the end of the meeting. Must be a valid date-time string.
  * @property {MediaStreamTrack}  localVideo   The local video stream track.
  * @property {MediaStreamTrack}  localAudio   The local audio stream track.
  * @property {MediaStream}       localShare   The local media share stream.
- * @property {MediaStreamTrack}  remoteVideo  The remote video stream track.
- * @property {MediaStreamTrack}  remoteAudio  The remote audio stream track.
+ * @property {MediaStream}       remoteVideo  The remote video stream.
+ * @property {MediaStream}       remoteAudio  The remote audio stream.
  * @property {MediaStream}       remoteShare  The remote media share stream.
  */
 

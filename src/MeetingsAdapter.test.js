@@ -13,18 +13,20 @@ describe('Meetings Adapter Interface', () => {
     meetingsAdapter = null;
   });
 
-  test('getMeeting() returns an observable', () => {
-    expect(isObservable(meetingsAdapter.getMeeting())).toBeTruthy();
-  });
+  describe('getMeeting()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(meetingsAdapter.getMeeting())).toBeTruthy();
+    });
 
-  test('getMeeting() errors because it needs to be defined', (done) => {
-    meetingsAdapter.getMeeting('meetingID').subscribe(
-      () => {},
-      (error) => {
-        expect(error.message).toBe('getMeeting(ID) must be defined in MeetingsAdapter');
-        done();
-      }
-    );
+    test('errors because it needs to be defined', (done) => {
+      meetingsAdapter.getMeeting('meetingID').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getMeeting(ID) must be defined in MeetingsAdapter');
+          done();
+        }
+      );
+    });
   });
 
   test('addLocalMedia() errors because it needs to be defined', () => {
