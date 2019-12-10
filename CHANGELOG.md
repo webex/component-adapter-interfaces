@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/webex/component-adapter-interfaces/compare/v1.6.0...v1.7.0) (2019-12-10)
+
+
+### Bug Fixes
+
+* **MeetingsAdapter:** update addLocalMedia() to not have a return value ([617f17e](https://github.com/webex/component-adapter-interfaces/commit/617f17e3ec38975b505376943c495c8dd14dc542))
+* **MeetingsAdapter:** update Meeting definition to match ad-hoc meetings ([44b5bc0](https://github.com/webex/component-adapter-interfaces/commit/44b5bc0d72a2d4542f618743f9b11be250893d8a))
+
+
+### Features
+
+* **MeetingsAdapter:** add createMeeting() definition ([d83df0e](https://github.com/webex/component-adapter-interfaces/commit/d83df0e5b3d4ce3dbe92c88ea1466bb83ec2b288))
+* **MeetingsAdapter:** add joinMeeting() definition ([173cc78](https://github.com/webex/component-adapter-interfaces/commit/173cc7850413fc6f62112e22c654fb8a195ac55e))
+
 # [1.6.0](https://github.com/webex/component-adapter-interfaces/compare/v1.5.0...v1.6.0) (2019-12-06)
 
 
