@@ -92,19 +92,6 @@ export default class MeetingsAdapter extends WebexAdapter {
   }
 
   /**
-   * Returns a promise that resolves once the local media has
-   * been successfully added. The promise will reject if there
-   * is an issue adding local media.
-   *
-   * @param {string} ID  ID of the meeting to add the local media to.
-   * @returns {Promise.<Meeting>}
-   * @memberof MeetingsAdapter
-   */
-  addLocalMedia(ID) {
-    return Promise.reject(new Error('addMediaLocal(ID) must be defined in MeetingsAdapter'));
-  }
-
-  /**
    * Returns an observable that emits a Meeting object.
    * Whenever there is an update to the meeting, the observable
    * will emit a new updated Meeting object, if datasource permits.
@@ -115,5 +102,19 @@ export default class MeetingsAdapter extends WebexAdapter {
    */
   getMeeting(ID) {
     return throwError(new Error('getMeeting(ID) must be defined in MeetingsAdapter'));
+  }
+
+  /**
+   * Retrieves the local device media (video/audio) and adds them to the meeting
+   * with the some default media settings.
+   * Adding local media is performed as a side-effect and this method does not
+   * return a value. Instead, adding local media to a meeting should trigger
+   * getMeeting to emit a new updated Meeting object.
+   *
+   * @param {string} ID  ID of the meeting to add the local media to.
+   * @memberof MeetingsAdapter
+   */
+  addLocalMedia(ID) {
+    throw new Error('addMediaLocal(ID) must be defined in MeetingsAdapter');
   }
 }
