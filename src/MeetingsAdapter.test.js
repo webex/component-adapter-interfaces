@@ -29,13 +29,14 @@ describe('Meetings Adapter Interface', () => {
     });
   });
 
-  test('addLocalMedia() errors because it needs to be defined', () => {
-    meetingsAdapter
-      .addLocalMedia('meetingID')
-      .then(() => {})
-      .catch((error) => {
+  describe('addLocalMedia()', () => {
+    test('errors because it needs to be defined', () => {
+      try {
+        meetingsAdapter.addLocalMedia('meetingID');
+      } catch (error) {
         expect(error.message).toBe('addMediaLocal(ID) must be defined in MeetingsAdapter');
-      });
+      }
+    });
   });
 
   test('meetingControls property exists', () => {
