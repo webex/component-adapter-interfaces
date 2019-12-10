@@ -29,6 +29,22 @@ describe('Meetings Adapter Interface', () => {
     });
   });
 
+  describe('createMeeting()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(meetingsAdapter.createMeeting())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      meetingsAdapter.createMeeting('sipURI@webex.com').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('createMeeting(ID) must be defined in MeetingsAdapter');
+          done();
+        }
+      );
+    });
+  });
+
   describe('addLocalMedia()', () => {
     test('errors because it needs to be defined', () => {
       try {
