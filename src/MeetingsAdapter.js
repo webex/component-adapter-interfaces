@@ -92,6 +92,20 @@ export default class MeetingsAdapter extends WebexAdapter {
   }
 
   /**
+   * Creates a meeting for the given destination. Returns an observable
+   * that emits a Meeting object with the data from the newly created meeting.
+   * Observable should complete after emitting data.
+   * If there is an issue creating the meeting, the observable will error.
+   *
+   * @param {string} destination  Virtual location where the meeting should take place
+   * @returns {Observable.<Meeting>}
+   * @memberof MeetingsAdapter
+   */
+  createMeeting(destination) {
+    return throwError(new Error('createMeeting(ID) must be defined in MeetingsAdapter'));
+  }
+
+  /**
    * Returns an observable that emits a Meeting object.
    * Whenever there is an update to the meeting, the observable
    * will emit a new updated Meeting object, if datasource permits.
