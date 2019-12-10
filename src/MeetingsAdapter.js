@@ -119,6 +119,19 @@ export default class MeetingsAdapter extends WebexAdapter {
   }
 
   /**
+   * Joins the meeting of the given ID.
+   * Joining a meeting is performed as a side-effect and this method does not
+   * return a value. Instead, joining a meeting should trigger getMeeting to
+   * emit a new updated Meeting object.
+   *
+   * @param {string} ID  ID of the meeting to join.
+   * @memberof MeetingsAdapter
+   */
+  joinMeeting(ID) {
+    throw new Error('joinMeeting(ID) must be defined in MeetingsAdapter');
+  }
+
+  /**
    * Retrieves the local device media (video/audio) and adds them to the meeting
    * with the some default media settings.
    * Adding local media is performed as a side-effect and this method does not
