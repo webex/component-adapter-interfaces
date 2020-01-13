@@ -132,6 +132,19 @@ export default class MeetingsAdapter extends WebexAdapter {
   }
 
   /**
+   * Leaves from the meeting of the given ID.
+   * Leaving from a meeting is performed as a side-effect and this method does not
+   * return a value. Instead, leaving from a meeting should trigger getMeeting to
+   * emit a new updated Meeting object.
+   *
+   * @param {string} ID  ID of the meeting to leave from.
+   * @memberof MeetingsAdapter
+   */
+  leaveMeeting(ID) {
+    throw new Error('leaveMeeting(ID) must be defined in MeetingsAdapter');
+  }
+
+  /**
    * Retrieves the local device media (video/audio) and adds them to the meeting
    * with the some default media settings.
    * Adding local media is performed as a side-effect and this method does not
