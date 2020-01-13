@@ -55,6 +55,16 @@ describe('Meetings Adapter Interface', () => {
     });
   });
 
+  describe('leaveMeeting()', () => {
+    test('errors because it needs to be defined', () => {
+      try {
+        meetingsAdapter.leaveMeeting('meetingID');
+      } catch (error) {
+        expect(error.message).toBe('leaveMeeting(ID) must be defined in MeetingsAdapter');
+      }
+    });
+  });
+
   describe('addLocalMedia()', () => {
     test('errors because it needs to be defined', () => {
       try {
