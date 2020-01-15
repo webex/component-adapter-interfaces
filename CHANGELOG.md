@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/webex/component-adapter-interfaces/compare/v1.7.0...v1.8.0) (2020-01-15)
+
+
+### Features
+
+* **MeetingsAdapter:** add leaveMeeting() definition ([4585ff9](https://github.com/webex/component-adapter-interfaces/commit/4585ff946bc89fb277ad038d69a859a9500ebb4a))
+
 # [1.7.0](https://github.com/webex/component-adapter-interfaces/compare/v1.6.0...v1.7.0) (2019-12-10)
 
 
