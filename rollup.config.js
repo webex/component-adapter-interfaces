@@ -7,6 +7,9 @@ const output = (name, format) => ({
   file: `dist/webexComponentAdapterInterfaces.${format}.js`,
   format,
   sourcemap: true,
+  globals: {
+    rxjs: 'rxjs',
+  },
 });
 
 export default [
@@ -18,5 +21,6 @@ export default [
       output('ESMWebexComponentAdapterInterfaces', 'esm'),
     ],
     plugins: [resolve(), babel(), commonJS()],
+    external: ['rxjs'],
   },
 ];
