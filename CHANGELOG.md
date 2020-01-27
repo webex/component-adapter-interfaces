@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/webex/component-adapter-interfaces/compare/v1.8.0...v1.8.1) (2020-01-27)
+
+
+### Bug Fixes
+
+* **MeetingsAdapter:** document getMeeting must complete after leaving ([2261c61](https://github.com/webex/component-adapter-interfaces/commit/2261c611bcc3f7c54d2526dc4fb2079ffdcf23a3))
+
 # [1.8.0](https://github.com/webex/component-adapter-interfaces/compare/v1.7.0...v1.8.0) (2020-01-15)
 
 
