@@ -109,6 +109,8 @@ export default class MeetingsAdapter extends WebexAdapter {
    * Returns an observable that emits a Meeting object.
    * Whenever there is an update to the meeting, the observable
    * will emit a new updated Meeting object, if datasource permits.
+   * Observable must complete when the meeting is left
+   * (e.g. @see {@link leaveMeeting} triggers an event).
    *
    * @param {string} ID  ID of the meeting to get.
    * @returns {Observable.<Meeting>}
@@ -136,6 +138,7 @@ export default class MeetingsAdapter extends WebexAdapter {
    * Leaving from a meeting is performed as a side-effect and this method does not
    * return a value. Instead, leaving from a meeting should trigger getMeeting to
    * emit a new updated Meeting object.
+   * Leaving a meeting should trigger @see {@link getMeeting} to be complete.
    *
    * @param {string} ID  ID of the meeting to leave from.
    * @memberof MeetingsAdapter
