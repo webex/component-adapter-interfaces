@@ -146,18 +146,4 @@ export default class MeetingsAdapter extends WebexAdapter {
   leaveMeeting(ID) {
     throw new Error('leaveMeeting(ID) must be defined in MeetingsAdapter');
   }
-
-  /**
-   * Retrieves the local device media (video/audio) and adds them to the meeting
-   * with the some default media settings.
-   * Adding local media is performed as a side-effect and this method does not
-   * return a value. Instead, adding local media to a meeting should trigger
-   * getMeeting to emit a new updated Meeting object.
-   *
-   * @param {string} ID  ID of the meeting to add the local media to.
-   * @memberof MeetingsAdapter
-   */
-  addLocalMedia(ID) {
-    throw new Error('addMediaLocal(ID) must be defined in MeetingsAdapter');
-  }
 }
