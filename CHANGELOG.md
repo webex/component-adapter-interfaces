@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/webex/component-adapter-interfaces/compare/v1.8.1...v1.9.0) (2020-01-29)
+
+
+### Features
+
+* **MeetingsAdapter:** addLocalMedia is removed from the interface ([42777db](https://github.com/webex/component-adapter-interfaces/commit/42777db0cb7d5078ef72fb1024dfcbca70441550))
+
 ## [1.8.1](https://github.com/webex/component-adapter-interfaces/compare/v1.8.0...v1.8.1) (2020-01-27)
 
 
