@@ -31,8 +31,8 @@
     "@babel/preset-env": "^7.6.3",
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
-    "@semantic-release/changelog": "^3.0.4",
-    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
     "@webex/eslint-config-base": "^0.8.0",
     "babel-eslint": "^10.0.3",
     "conventional-changelog-angular": "^5.0.5",
@@ -51,7 +51,7 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "semantic-release": "^15.13.27"
+    "semantic-release": "^17.0.4"
   },
   "peerDependencies": {
     "rxjs": "^6.5.3"
