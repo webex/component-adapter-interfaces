@@ -15,11 +15,7 @@ const output = (name, format) => ({
 export default [
   {
     input: 'src/index.js',
-    output: [
-      output('WebexComponentAdapterInterfaces', 'cjs'),
-      output('UMDWebexComponentAdapterInterfaces', 'umd'),
-      output('ESMWebexComponentAdapterInterfaces', 'esm'),
-    ],
+    output: [output('ESMWebexComponentAdapterInterfaces', 'esm')],
     plugins: [resolve(), babel(), commonJS()],
     external: ['rxjs'],
   },
