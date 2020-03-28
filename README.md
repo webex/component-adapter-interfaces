@@ -68,11 +68,17 @@ _Happy Coding!_
 
 ## Contributing
 
-We'd love for you to contribute to our source code and to make **Webex Component Adapter Interfaces** even better than it is today! Here are some [guidelines](https://github.com/webex/components/blob/master/CONTRIBUTING.md) that we'd like you to follow.
+We'd love for you to contribute to our source code and to make
+**Webex Component Adapter Interfaces** even better than it is today!
+Here are some
+[guidelines](https://github.com/webex/component-adapter-interfaces/blob/master/CONTRIBUTING.md)
+that we'd like you to follow.
 
 ### Issues
 
-Please open an [issue](https://github.com/webex/components/issues) and we will get to it in an orderly manner.
+Please open an
+[issue](https://github.com/webex/component-adapter-interfaces/issues)
+and we will get to it in an orderly manner.
 Please leave as much as information as possible for a better understanding.
 
 ### Contributing Code
@@ -86,9 +92,14 @@ npm run prettier:write
 
 ### Release Process
 
-There is a list of commit types provided [here](https://github.com/webex/components/blob/master/CONTRIBUTING.md#type). However, not all commits trigger our release process.
-We are using [semantic-release](https://github.com/semantic-release/semantic-release) to fully automate the version management and package publishing.
-By default `semantic-release` uses the [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) and triggers release and publishing based on the following rules:
+There is a list of commit types provided
+[here](https://github.com/webex/component-adapter-interfaces/blob/master/CONTRIBUTING.md#type).
+However, not all commits trigger our release process. We are using
+[semantic-release](https://github.com/semantic-release/semantic-release)
+to fully automate the version management and package publishing.
+By default `semantic-release` uses the
+[Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
+and triggers release and publishing based on the following rules:
 
 | Commit                             | Release type  |
 | ---------------------------------- | :-----------: |
@@ -99,8 +110,12 @@ By default `semantic-release` uses the [Angular Commit Message Conventions](http
 
 #### Commit linter
 
-We are using [commitlint](https://github.com/conventional-changelog/commitlint) to lintify the commit messages.
-Please make sure to choose the appropriate commit [type](https://github.com/webex/components/blob/master/CONTRIBUTING.md#type), [scope](https://github.com/webex/components/blob/master/CONTRIBUTING.md#scope) and [subject](https://github.com/webex/components/blob/master/CONTRIBUTING.md#scope).
+We are using [commitlint](https://github.com/conventional-changelog/commitlint)
+to lint the commit messages.
+Please make sure to choose the appropriate commit
+[type](https://github.com/webex/components/blob/master/CONTRIBUTING.md#type),
+[scope](https://github.com/webex/components/blob/master/CONTRIBUTING.md#scope) and
+[subject](https://github.com/webex/components/blob/master/CONTRIBUTING.md#scope).
 
 ## License
 
