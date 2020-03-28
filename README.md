@@ -25,11 +25,6 @@ uses as a contract for the _Webex Components_ on how to obtain data.
 - [Table of Contents](#table-of-contents)
 - [Install](#install)
 - [Usage](#usage)
-- [Contributing](#contributing)
-  - [Issues](#issues)
-  - [Contributing Code](#contributing-code)
-  - [Release Process](#release-process)
-    - [Commit linter](#commit-linter)
 - [License](#license)
 - [Support](#support)
 
@@ -66,56 +61,12 @@ expect.
 
 _Happy Coding!_
 
-## Contributing
-
-We'd love for you to contribute to our source code and to make
-**Webex Component Adapter Interfaces** even better than it is today!
-Here are some
-[guidelines](https://github.com/webex/component-adapter-interfaces/blob/master/CONTRIBUTING.md)
-that we'd like you to follow.
-
 ### Issues
 
 Please open an
 [issue](https://github.com/webex/component-adapter-interfaces/issues)
 and we will get to it in an orderly manner.
 Please leave as much as information as possible for a better understanding.
-
-### Contributing Code
-
-We are using [Webex Style Guide eslint rule](https://github.com/webex/web-styleguide/tree/master/packages/node_modules/%40webex/eslint-config-react) and [prettier](https://github.com/prettier/prettier) to lint the code style.
-You can "prettify" your code before committing via:
-
-```bash
-npm run prettier:write
-```
-
-### Release Process
-
-There is a list of commit types provided
-[here](https://github.com/webex/component-adapter-interfaces/blob/master/CONTRIBUTING.md#type).
-However, not all commits trigger our release process. We are using
-[semantic-release](https://github.com/semantic-release/semantic-release)
-to fully automate the version management and package publishing.
-By default `semantic-release` uses the
-[Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines)
-and triggers release and publishing based on the following rules:
-
-| Commit                             | Release type  |
-| ---------------------------------- | :-----------: |
-| Commit with type `BREAKING CHANGE` | Major release |
-| Commit with type `feat`            | Minor release |
-| Commit with type `fix`             | Patch release |
-| Commit with type `perf`            | Patch release |
-
-#### Commit linter
-
-We are using [commitlint](https://github.com/conventional-changelog/commitlint)
-to lint the commit messages.
-Please make sure to choose the appropriate commit
-[type](https://github.com/webex/components/blob/master/CONTRIBUTING.md#type),
-[scope](https://github.com/webex/components/blob/master/CONTRIBUTING.md#scope) and
-[subject](https://github.com/webex/components/blob/master/CONTRIBUTING.md#scope).
 
 ## License
 
