@@ -1,6 +1,7 @@
-<h1 align='center' style='border-bottom: none;'>Webex Component Adapter Interfaces</h1>
-<h3 align='center'>Library of Adapter Interfaces for Webex components</h3>
-<p align='center'>
+<div align='center'>
+  <h1>Webex Component Adapter Interfaces</h1>
+  <h3>Library of Interfaces for Adapters in the Webex Component System</h3>
+
   <a href='https://circleci.com/gh/webex/component-adapter-interfaces'>
     <img alt='CircleCI' src='https://circleci.com/gh/webex/component-adapter-interfaces.svg?style=shield'>
   </a>
@@ -13,9 +14,11 @@
   <a href='https://github.com/webex/component-adapter-interfaces/blob/master/package.json#L28'>
     <img src='https://img.shields.io/npm/l/webex.svg' alt='license'>
   </a>
-</p>
+</div>
 
-**Webex Component Adapter Interfaces** is a set of interfaces that [Webex Components](https://github.com/webex/components#adapters) use as a contract on how to obtain data.
+**Webex Component Adapter Interfaces** is a set of interfaces that the
+[Webex Component System](https://github.com/webex/components#adapters)
+uses as a contract for the _Webex Components_ on how to obtain data.
 
 ## Table of Contents
 
@@ -39,7 +42,15 @@ npm install --save @webex/component-adapter-interfaces
 
 ## Usage
 
-An example of extending the `RoomsAdapter` for your datasource:
+The adapter interfaces are meant to be used by developers that want to use the
+[Webex Components](https://github.com/webex/components#webex-components) but for
+which an adapter does not exist for their source of data. For instance, the
+[SDK Component Adapter](https://github.com/webex/sdk-component-adapter#webex-sdk-component-adapter)
+exists to communicate with the
+[Javascript SDK](https://github.com/webex/webex-js-sdk#webex-js-sdk)
+to ultimately obtain data from Webex services.
+
+An example of extending the `RoomsAdapter` for your datasource would look like:
 
 ```js
 import {RoomsAdapter} from '@webex/components-adapter-interfaces';
@@ -50,6 +61,9 @@ export default class MyRoomsAdapter extends RoomsAdapter {
   }
 }
 ```
+
+The key of the interfaces is that they define what methods the _Webex Components_
+expect.
 
 _Happy Coding!_
 
@@ -77,12 +91,12 @@ There is a list of commit types provided [here](https://github.com/webex/compone
 We are using [semantic-release](https://github.com/semantic-release/semantic-release) to fully automate the version management and package publishing.
 By default `semantic-release` uses the [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) and triggers release and publishing based on the following rules:
 
-| Commit | Release type  |
-| --- | :---: |
+| Commit                             | Release type  |
+| ---------------------------------- | :-----------: |
 | Commit with type `BREAKING CHANGE` | Major release |
-| Commit with type `feat` | Minor release |
-| Commit with type `fix` | Patch release |
-| Commit with type `perf` | Patch release |
+| Commit with type `feat`            | Minor release |
+| Commit with type `fix`             | Patch release |
+| Commit with type `perf`            | Patch release |
 
 #### Commit linter
 
@@ -100,5 +114,5 @@ For more developer resources, tutorials and support, visit the Webex developer p
 ## Team
 
 | [![Adam Weeks](https://github.com/adamweeks.png?size=100)](https://github.com/adamweeks) | [![Arash Koushkebaghi](https://github.com/akoushke.png?size=100)](https://github.com/akoushke) | [![Lalli Flores](https://github.com/lalli-flores.png?size=100)](https://github.com/lalli-flores) | [![Timothy Scheuering](https://github.com/InteractiveTimmy.png?size=100)](https://github.com/InteractiveTimmy) | [![David Hoff](https://github.com/harborhoffer.png?size=100)](https://github.com/harborhoffer) | [![Taymoor Khan](https://github.com/taymoork2.png?size=100)](https://github.com/taymoork2) |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| [Adam Weeks](https://github.com/adamweeks) | [Arash Koushkebaghi](https://github.com/akoushke) | [Lalli Flores](https://github.com/lalli-flores) | [Timothy Scheuering](https://github.com/InteractiveTimmy) | [David Hoff](https://github.com/harborhoffer) | [Taymoor Khan](https://github.com/taymoork2) |
+| :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+|                        [Adam Weeks](https://github.com/adamweeks)                        |                       [Arash Koushkebaghi](https://github.com/akoushke)                        |                         [Lalli Flores](https://github.com/lalli-flores)                          |                           [Timothy Scheuering](https://github.com/InteractiveTimmy)                            |                         [David Hoff](https://github.com/harborhoffer)                          |                        [Taymoor Khan](https://github.com/taymoork2)                        |
