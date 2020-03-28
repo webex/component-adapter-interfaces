@@ -5,8 +5,8 @@
   "module": "dist/webexComponentAdapterInterfaces.esm.js",
   "scripts": {
     "build": "rollup -c",
-    "prettier": "prettier \"src/**/*.*(js)\"",
-    "prettier:write": "prettier \"src/**/*.*(js)\" --write",
+    "prettier": "prettier --check \"src/**/*.*(js)\"",
+    "prettier:write": "prettier --write \"src/**/*.*(js)\"",
     "release": "semantic-release",
     "release:debug": "semantic-release --debug",
     "release:dry-run": "semantic-release --dry-run",
