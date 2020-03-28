@@ -32,7 +32,6 @@ uses as a contract for the _Webex Components_ on how to obtain data.
     - [Commit linter](#commit-linter)
 - [License](#license)
 - [Support](#support)
-- [Team](#team)
 
 ## Install
 
@@ -110,9 +109,3 @@ Please make sure to choose the appropriate commit [type](https://github.com/webe
 ## Support
 
 For more developer resources, tutorials and support, visit the Webex developer portal, https://developer.webex.com.
-
-## Team
-
-| [![Adam Weeks](https://github.com/adamweeks.png?size=100)](https://github.com/adamweeks) | [![Arash Koushkebaghi](https://github.com/akoushke.png?size=100)](https://github.com/akoushke) | [![Lalli Flores](https://github.com/lalli-flores.png?size=100)](https://github.com/lalli-flores) | [![Timothy Scheuering](https://github.com/InteractiveTimmy.png?size=100)](https://github.com/InteractiveTimmy) | [![David Hoff](https://github.com/harborhoffer.png?size=100)](https://github.com/harborhoffer) | [![Taymoor Khan](https://github.com/taymoork2.png?size=100)](https://github.com/taymoork2) |
-| :--------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-|                        [Adam Weeks](https://github.com/adamweeks)                        |                       [Arash Koushkebaghi](https://github.com/akoushke)                        |                         [Lalli Flores](https://github.com/lalli-flores)                          |                           [Timothy Scheuering](https://github.com/InteractiveTimmy)                            |                         [David Hoff](https://github.com/harborhoffer)                          |                        [Taymoor Khan](https://github.com/taymoork2)                        |
