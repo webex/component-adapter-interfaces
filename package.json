@@ -1,6 +1,6 @@
 {
   "name": "@webex/component-adapter-interfaces",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "main": "dist/webexComponentAdapterInterfaces.esm.js",
   "module": "dist/webexComponentAdapterInterfaces.esm.js",
   "scripts": {

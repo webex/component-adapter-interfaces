@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/webex/component-adapter-interfaces/compare/v1.9.0...v1.10.0) (2020-07-06)
+
+
+### Features
+
+* **memberships:** add memberships adapter interface ([7141890](https://github.com/webex/component-adapter-interfaces/commit/71418903c44f2d662194edce1f172223f9abff0b))
+
 # [1.9.0](https://github.com/webex/component-adapter-interfaces/compare/v1.8.1...v1.9.0) (2020-01-29)
 
 
