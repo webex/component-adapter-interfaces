@@ -1,22 +1,29 @@
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonJS from 'rollup-plugin-commonjs';
+import {terser} from 'rollup-plugin-terser';
 
-const output = (name, format) => ({
-  name,
-  file: `dist/webexComponentAdapterInterfaces.${format}.js`,
-  format,
-  sourcemap: true,
-  globals: {
-    rxjs: 'rxjs',
-  },
-});
+/**
+ * The configuration for the adapter interfaces is very straightforward since:
+ * - Project doesn't have dependencies
+ * - Project only has RxJS as a peer dependency
+ */
+
+const modulePath = 'dist/webex-component-adapter-interfaces';
 
 export default [
   {
     input: 'src/index.js',
-    output: [output('ESMWebexComponentAdapterInterfaces', 'esm')],
-    plugins: [resolve(), babel(), commonJS()],
-    external: ['rxjs'],
+    output: [
+      {
+        file: `${modulePath}.es.js`,
+        format: 'es',
+        sourcemap: true,
+      },
+      {
+        file: `${modulePath}.es.min.js`,
+        format: 'es',
+        sourcemap: true,
+        plugins: [terser()],
+      },
+    ],
+    external: [/rxjs/],
   },
 ];

@@ -4,8 +4,8 @@
   "description": "Adapter interfaces for Webex Components (https://github.com/webex/components)",
   "author": "devsupport@webex.com",
   "license": "MIT",
-  "main": "dist/webexComponentAdapterInterfaces.esm.js",
-  "module": "dist/webexComponentAdapterInterfaces.esm.js",
+  "main": "dist/webex-component-adapter-interfaces.es.min.js",
+  "module": "dist/webex-component-adapter-interfaces.es.min.js",
   "scripts": {
     "build": "rollup -c",
     "prettier": "prettier --check \"src/**/*.*(js)\"",
