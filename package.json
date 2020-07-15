@@ -90,5 +90,25 @@
       "pre-push": "npm run test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "dist/webex-component-adapter-interfaces.es.min.js",
+              "label": "ECMAScript (ESM) minified bundle"
+            }
+          ]
+        }
+      ]
+    ]
   }
 }
