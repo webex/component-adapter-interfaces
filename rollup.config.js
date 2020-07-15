@@ -26,4 +26,25 @@ export default [
     ],
     external: [/rxjs/],
   },
+  {
+    input: 'src/index.js',
+    output: [
+      {
+        file: `${modulePath}.umd.js`,
+        format: 'umd',
+        sourcemap: true,
+        name: 'WebexComponentAdapterInterfaces',
+        globals: {rxjs: 'rxjs'},
+      },
+      {
+        file: `${modulePath}.umd.min.js`,
+        format: 'umd',
+        sourcemap: true,
+        name: 'WebexComponentAdapterInterfaces',
+        globals: {rxjs: 'rxjs'},
+        plugins: [terser()],
+      },
+    ],
+    external: [/rxjs/],
+  },
 ];

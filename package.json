@@ -105,6 +105,10 @@
             {
               "path": "dist/webex-component-adapter-interfaces.es.min.js",
               "label": "ECMAScript (ESM) minified bundle"
+            },
+            {
+              "path": "dist/webex-component-adapter-interfaces.umd.min.js",
+              "label": "Universal Module Definition (UMD) minified bundle"
             }
           ]
         }
