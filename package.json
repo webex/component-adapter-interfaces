@@ -4,7 +4,7 @@
   "description": "Adapter interfaces for Webex Components (https://github.com/webex/components)",
   "author": "devsupport@webex.com",
   "license": "MIT",
-  "main": "dist/webex-component-adapter-interfaces.es.min.js",
+  "main": "dist/webex-component-adapter-interfaces.umd.min.js",
   "module": "dist/webex-component-adapter-interfaces.es.min.js",
   "scripts": {
     "build": "rollup -c",
