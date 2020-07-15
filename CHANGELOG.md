@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/webex/component-adapter-interfaces/compare/v1.10.0...v1.10.1) (2020-07-15)
+
+
+### Bug Fixes
+
+* **package:** add UMD bundle as main entry point ([dac867e](https://github.com/webex/component-adapter-interfaces/commit/dac867ea8c525697ae8856e91853b47ee3482e31))
+
 # [1.10.0](https://github.com/webex/component-adapter-interfaces/compare/v1.9.0...v1.10.0) (2020-07-06)
 
 
