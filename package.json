@@ -48,10 +48,11 @@
     "prettier": "^2.0.2",
     "rollup": "^2.21.0",
     "rollup-plugin-terser": "^6.1.0",
+    "rxjs": "^6.6.0",
     "semantic-release": "^17.1.1"
   },
   "peerDependencies": {
-    "rxjs": "^6.5.3"
+    "rxjs": "^6.6.0"
   },
   "babel": {
     "presets": [
