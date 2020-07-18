@@ -15,18 +15,20 @@ describe('Memberships Adapter Interface', () => {
 
   describe('getMembership()', () => {
     test('returns an observable', () => {
-      expect(isObservable(membershipsAdapter.getMembersFromDestination())).toBeTruthy();
+      const methodUnderTest = membershipsAdapter.getMembersFromDestination();
+
+      expect(isObservable(methodUnderTest)).toBeTruthy();
     });
 
     test('errors because it needs to be defined', (done) => {
+      const message = 'getMembersFromDestination(destinationID, destinationType) must be defined in MembershipsAdapter';
+
       membershipsAdapter.getMembersFromDestination('meetingID', 'meetingType').subscribe(
         () => {},
         (error) => {
-          expect(error.message).toBe(
-            'getMembersFromDestination(destinationID, destinationType) must be defined in MembershipsAdapter'
-          );
+          expect(error.message).toBe(message);
           done();
-        }
+        },
       );
     });
   });

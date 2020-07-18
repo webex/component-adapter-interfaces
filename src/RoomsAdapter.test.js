@@ -23,7 +23,7 @@ describe('Rooms Adapter Interface', () => {
       (error) => {
         expect(error.message).toBe('getRoom(ID) must be defined in RoomsAdapter');
         done();
-      }
+      },
     );
   });
 
@@ -37,7 +37,7 @@ describe('Rooms Adapter Interface', () => {
       (error) => {
         expect(error.message).toBe('getRoomActivities(ID) must be defined in RoomsAdapter');
         done();
-      }
+      },
     );
   });
 
@@ -51,7 +51,7 @@ describe('Rooms Adapter Interface', () => {
       (error) => {
         expect(error.message).toBe('getPreviousRoomActivities(ID) must be defined in RoomsAdapter');
         done();
-      }
+      },
     );
   });
 

@@ -24,7 +24,7 @@ describe('People Adapter Interface', () => {
         (error) => {
           expect(error.message).toBe('getPerson(ID) must be defined in PeopleAdapter');
           done();
-        }
+        },
       );
     });
   });
@@ -40,7 +40,7 @@ describe('People Adapter Interface', () => {
         (error) => {
           expect(error.message).toBe('getMe() must be defined in PeopleAdapter');
           done();
-        }
+        },
       );
     });
   });

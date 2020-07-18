@@ -23,7 +23,7 @@ describe('Activities Adapter Interface', () => {
       (error) => {
         expect(error.message).toBe('getActivity(ID) must be defined in ActivitiesAdapter');
         done();
-      }
+      },
     );
   });
 });
