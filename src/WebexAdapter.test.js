@@ -1,7 +1,8 @@
 import WebexAdapter from './WebexAdapter';
 
 describe('Webex Adapter Interface', () => {
-  let webexAdapter, datasource;
+  let webexAdapter;
+  let datasource;
 
   beforeEach(() => {
     datasource = 'WebexAdapterDataSource';

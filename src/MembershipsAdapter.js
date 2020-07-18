@@ -43,7 +43,7 @@ export default class MembershipsAdapter extends WebexAdapter {
    */
   getMembersFromDestination(destinationID, destinationType) {
     return throwError(
-      new Error('getMembersFromDestination(destinationID, destinationType) must be defined in MembershipsAdapter')
+      new Error('getMembersFromDestination(destinationID, destinationType) must be defined in MembershipsAdapter'),
     );
   }
 }

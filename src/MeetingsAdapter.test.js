@@ -24,7 +24,7 @@ describe('Meetings Adapter Interface', () => {
         (error) => {
           expect(error.message).toBe('getMeeting(ID) must be defined in MeetingsAdapter');
           done();
-        }
+        },
       );
     });
   });
@@ -40,7 +40,7 @@ describe('Meetings Adapter Interface', () => {
         (error) => {
           expect(error.message).toBe('createMeeting(ID) must be defined in MeetingsAdapter');
           done();
-        }
+        },
       );
     });
   });
