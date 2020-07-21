@@ -7,12 +7,14 @@
     "sourceType": "module"
   },
   "plugins": [
-    "jest"
+    "jest",
+    "jsdoc"
   ],
   "extends": [
     "airbnb-base",
     "plugin:jest/recommended",
-    "plugin:jest/style"
+    "plugin:jest/style",
+    "plugin:jsdoc/recommended"
   ],
   "rules": {
     "func-style": [

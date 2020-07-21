@@ -5,15 +5,15 @@ import WebexAdapter from './WebexAdapter';
 /**
  * A Person object with details about the person.
  *
- * @typedef {Object} Person
- * @property {string}             ID          The person identifier.
- * @property {Array.<string>}     emails      An array of emails for the person.
- * @property {string}             displayName The name to be displayed for the person.
- * @property {string}             firstName   The first name of the person.
- * @property {string}             lastName    The last name of the person.
- * @property {string}             nickName    The short name for the person.
- * @property {string}             avatar      The full url to the person's avatar.
- * @property {string}             orgID       The ID of the organization the person belongs to.
+ * @typedef {object} Person
+ * @property {string}             ID          The person identifier
+ * @property {Array.<string>}     emails      An array of emails for the person
+ * @property {string}             displayName The name to be displayed for the person
+ * @property {string}             firstName   The first name of the person
+ * @property {string}             lastName    The last name of the person
+ * @property {string}             nickName    The short name for the person
+ * @property {string}             avatar      The full url to the person's avatar
+ * @property {string}             orgID       The ID of the organization the person belongs to
  * @property {null|PersonStatus}  status      The presence status of the user. @see {@link PersonStatus} enum
  */
 
@@ -51,7 +51,7 @@ export default class PeopleAdapter extends WebexAdapter {
    * to instantiate the SDK, an access token must be given, "me" in that case
    * is the owner of the access token for that SDK instance.
    *
-   * @returns {Observable.<Person>}
+   * @returns {external:Observable.<Person>} Observable stream that emits person data
    * @memberof PeopleAdapter
    */
   getMe() {
@@ -61,8 +61,8 @@ export default class PeopleAdapter extends WebexAdapter {
   /**
    * Returns an observable that emits person data of the given ID.
    *
-   * @param {string} ID ID of person to get.
-   * @returns {Observable.<Person>}
+   * @param {string} ID ID of person to get
+   * @returns {external:Observable.<Person>} Observable stream that emits person data
    * @memberof PeopleAdapter
    */
   getPerson(ID) {

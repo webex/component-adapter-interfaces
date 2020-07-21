@@ -5,13 +5,13 @@ import WebexAdapter from './WebexAdapter';
 /**
  * An activity a person performs in Webex.
  *
- * @typedef  {Object} Activity
- * @property {string}  ID             The activity identifier.
- * @property {string}  roomID         ID of the room where the activity happens.
- * @property {string}  text           Any text the activity may contain.
- * @property {string}  personID       ID of the person performing the activity.
- * @property {Date}    created        Timestamp of the time when the activity happened.
- * @property {Boolean} displayAuthor  Whether to display author information or not.
+ * @typedef  {object} Activity
+ * @property {string}  ID             The activity identifier
+ * @property {string}  roomID         ID of the room where the activity happens
+ * @property {string}  text           Any text the activity may contain
+ * @property {string}  personID       ID of the person performing the activity
+ * @property {Date}    created        Timestamp of the time when the activity happened
+ * @property {boolean} displayAuthor  Whether to display author information or not
  */
 
 /**
@@ -25,8 +25,8 @@ export default class ActivitiesAdapter extends WebexAdapter {
   /**
    * Returns an observable that emits activity data of the given ID.
    *
-   * @param {string} ID  ID of the activity to get.
-   * @returns {Observable.<Activity>}
+   * @param {string} ID  ID of the activity to get
+   * @returns {external:Observable.<Activity>} Observable stream that emits activity data
    * @memberof ActivityAdapter
    */
   getActivity(ID) {
