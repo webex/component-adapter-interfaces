@@ -6,9 +6,13 @@
   "parserOptions": {
     "sourceType": "module"
   },
+  "plugins": [
+    "jest"
+  ],
   "extends": [
     "airbnb-base",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:jest/style"
   ],
   "rules": {
     "func-style": [
@@ -77,6 +81,14 @@
           }
         ],
         "class-methods-use-this": "off"
+      }
+    },
+    {
+      "files": [
+        "*Adapter.test.js"
+      ],
+      "rules": {
+        "jest/no-test-callback": "off"
       }
     }
   ]
