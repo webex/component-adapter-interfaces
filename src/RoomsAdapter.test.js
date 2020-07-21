@@ -57,7 +57,7 @@ describe('Rooms Adapter Interface', () => {
 
   test('hasMoreActivities() errors because it needs to be defined', () => {
     try {
-      expect(roomsAdapter.hasMoreActivities('ID')).toThrowError();
+      expect(roomsAdapter.hasMoreActivities('ID')).toThrow();
       // eslint-disable-next-line no-empty
     } catch (error) {}
   });

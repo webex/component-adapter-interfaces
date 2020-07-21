@@ -47,21 +47,13 @@ describe('Meetings Adapter Interface', () => {
 
   describe('joinMeeting()', () => {
     test('errors because it needs to be defined', () => {
-      try {
-        meetingsAdapter.joinMeeting('meetingID');
-      } catch (error) {
-        expect(error.message).toBe('joinMeeting(ID) must be defined in MeetingsAdapter');
-      }
+      expect(() => meetingsAdapter.joinMeeting('meetingID')).toThrow('joinMeeting(ID) must be defined in MeetingsAdapter');
     });
   });
 
   describe('leaveMeeting()', () => {
     test('errors because it needs to be defined', () => {
-      try {
-        meetingsAdapter.leaveMeeting('meetingID');
-      } catch (error) {
-        expect(error.message).toBe('leaveMeeting(ID) must be defined in MeetingsAdapter');
-      }
+      expect(() => meetingsAdapter.leaveMeeting('meetingID')).toThrow('leaveMeeting(ID) must be defined in MeetingsAdapter');
     });
   });
 });
