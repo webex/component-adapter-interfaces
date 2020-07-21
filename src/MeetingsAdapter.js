@@ -3,61 +3,65 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
+ * MediaStream is a Web API standard that represents a stream of media content, e,g, video, audio.
+ *
+ * @external  MediaStream
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/MediaStream}
+ */
+
+/**
+ * MediaStreamTrack is a Web API standard that represents a single media track within a stream.
+ *
+ * @external MediaStreamTrack
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack}
+ */
+
+/**
  * A meeting object that allows users to have a WebRTC meeting.
  *
- * @typedef {Object}  Meeting
- * @property {string}            ID           The meeting identifier.
- * @property {string}            title        The title of the meeting.
- * @property {MediaStreamTrack}  localVideo   The local video stream track.
- * @property {MediaStreamTrack}  localAudio   The local audio stream track.
- * @property {MediaStream}       localShare   The local media share stream.
- * @property {MediaStream}       remoteVideo  The remote video stream.
- * @property {MediaStream}       remoteAudio  The remote audio stream.
- * @property {MediaStream}       remoteShare  The remote media share stream.
- */
-
-/**
- * @typedef {Object}  MediaStreamTrack
- * @see {@link MediaStreamTrack|https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack}
- */
-
-/**
- * @typedef {Object}  MediaStream
- * @see {@link MediaStream|https://developer.mozilla.org/en-US/docs/Web/API/MediaStream}
+ * @typedef {object}  Meeting
+ * @property {string}            ID           The meeting identifier
+ * @property {string}            title        The title of the meeting
+ * @property {MediaStreamTrack}  localVideo   The local video stream track
+ * @property {MediaStreamTrack}  localAudio   The local audio stream track
+ * @property {MediaStream}       localShare   The local media share stream
+ * @property {MediaStream}       remoteVideo  The remote video stream
+ * @property {MediaStream}       remoteAudio  The remote audio stream
+ * @property {MediaStream}       remoteShare  The remote media share stream
  */
 
 /**
  * A control/action that may modify a meeting or meeting state.
  *
- * @typedef {Object}  MeetingControl
- * @property {string}                         ID       The meeting control ID or name.
- * @property {MeetingControlAction}           action   A function that performs the control action. Must not return a value, as it must perform side-effects only.
- * @property {MeetingControlDisplayFunction}  display  A function that returns an observable that emits MeetingControlDisplay objects.
+ * @typedef {object}  MeetingControl
+ * @property {string}                         ID       The meeting control ID or name
+ * @property {MeetingControlAction}           action   A function that performs the control action. Must not return a value, as it must perform side-effects only
+ * @property {MeetingControlDisplayFunction}  display  A function that returns an observable that emits MeetingControlDisplay objects
  */
 
 /**
  * Action a meeting control performs. It must perform a side-effect only.
  *
- * @typedef {function}  MeetingControlAction
- * @param {string}  meetingID  ID of the meeting object for which to perform side-effect.
+ * @typedef {Function}  MeetingControlAction
+ * @param {string}  meetingID  ID of the meeting object for which to perform side-effect
  * @returns {void}
  */
 
 /**
- * Function that returns an obersvable that emits a meeting control display values.
+ * Function that returns an observable that emits a meeting control display values.
  *
- * @typedef {function}  MeetingControlDisplayFunction
- * @returns {Observable.<MeetingControlDisplay>}
+ * @typedef {Function}  MeetingControlDisplayFunction
+ * @returns {external:Observable.<MeetingControlDisplay>}
  */
 
 /**
  * Display options of a meeting control.
  *
- * @typedef {Object}  MeetingControlDisplay
+ * @typedef {object}  MeetingControlDisplay
  * @property {MeetingControlState}  state    Current state of the meeting control
- * @property {string}               tooltip  The text to display when user hovers over control.
- * @property {string}               icon     Momentum-ui icon name to display for the meeting control.
- * @property {string}               text     Text to display on the meeting control. If there is an icon and text, text takes precedence.
+ * @property {string}               tooltip  The text to display when user hovers over control
+ * @property {string}               icon     Momentum-ui icon name to display for the meeting control
+ * @property {string}               text     Text to display on the meeting control. If there is an icon and text, text takes precedence
  */
 
 /**
@@ -83,7 +87,7 @@ export default class MeetingsAdapter extends WebexAdapter {
   /**
    * Creates a new instance of the MeetingsAdapter.
    *
-   * @param {Object} datasource The primary datasource the adapter will be using.
+   * @param {object} datasource The primary datasource the adapter will be using
    */
   constructor(datasource) {
     super(datasource);
@@ -98,7 +102,7 @@ export default class MeetingsAdapter extends WebexAdapter {
    * If there is an issue creating the meeting, the observable will error.
    *
    * @param {string} destination  Virtual location where the meeting should take place
-   * @returns {Observable.<Meeting>}
+   * @returns {external:Observable.<Meeting>} Observable stream that emits meeting data
    * @memberof MeetingsAdapter
    */
   createMeeting(destination) {
@@ -112,8 +116,8 @@ export default class MeetingsAdapter extends WebexAdapter {
    * Observable must complete when the meeting is left
    * (e.g. @see {@link leaveMeeting} triggers an event).
    *
-   * @param {string} ID  ID of the meeting to get.
-   * @returns {Observable.<Meeting>}
+   * @param {string} ID  ID of the meeting to get
+   * @returns {external:Observable.<Meeting>} Observable stream that emits meeting data
    * @memberof MeetingsAdapter
    */
   getMeeting(ID) {
@@ -126,7 +130,7 @@ export default class MeetingsAdapter extends WebexAdapter {
    * return a value. Instead, joining a meeting should trigger getMeeting to
    * emit a new updated Meeting object.
    *
-   * @param {string} ID  ID of the meeting to join.
+   * @param {string} ID  ID of the meeting to join
    * @memberof MeetingsAdapter
    */
   joinMeeting(ID) {
@@ -140,7 +144,7 @@ export default class MeetingsAdapter extends WebexAdapter {
    * emit a new updated Meeting object.
    * Leaving a meeting should trigger @see {@link getMeeting} to be complete.
    *
-   * @param {string} ID  ID of the meeting to leave from.
+   * @param {string} ID  ID of the meeting to leave from
    * @memberof MeetingsAdapter
    */
   leaveMeeting(ID) {

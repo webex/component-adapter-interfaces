@@ -6,16 +6,16 @@ import WebexAdapter from './WebexAdapter';
 /**
  * A Room object with details about the room.
  *
- * @typedef {Object}  Room
- * @property {string}    ID     The room identifier.
- * @property {string}    title  The room title.
+ * @typedef {object}  Room
+ * @property {string}    ID     The room identifier
+ * @property {string}    title  The room title
  * @property {RoomType}  type   The type of the room. @see {@link RoomType} enum
  */
 
 /**
- * @typedef {Object}  ActivityDate
- * @param {string}  date  Date that will render on a time ruler. Must be a valid date-time string.
- *                        See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Date_Time_String_Format
+ * @typedef {object}  ActivityDate
+ * @property {string}  date  Date that will render on a time ruler. Must be a valid date-time string
+ * @see [Date-time string format]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Date_Time_String_Format}
  */
 
 /**
@@ -45,7 +45,7 @@ export default class RoomsAdapter extends WebexAdapter {
    * Returns an observable that emits room data of the given ID.
    *
    * @param {string} ID  ID of the room to get.
-   * @returns {Observable.<Room>}
+   * @returns {external:Observable.<Room>} Observable stream that emits room data
    * @memberof RoomsAdapter
    */
   getRoom(ID) {
@@ -56,7 +56,7 @@ export default class RoomsAdapter extends WebexAdapter {
    * Returns an observable that emits an array of current and future activities of the given roomID.
    *
    * @param {string} ID  ID of the room for which to get activities.
-   * @returns {Observable.<Array.<string|ActivityDate>>}
+   * @returns {external:Observable.<Array.<string|ActivityDate>>} Observable stream that emits arrays of activity IDs
    * @memberof RoomsAdapter
    */
   getRoomActivities(ID) {
@@ -70,7 +70,7 @@ export default class RoomsAdapter extends WebexAdapter {
    * **Previous activity data must be sorted newest-to-oldest.**
    *
    * @param {string} ID  ID of the room for which to get activities.
-   * @returns {Observable.<Array.<string|ActivityDate>>}
+   * @returns {external:Observable.<Array.<string|ActivityDate>>} Observable stream that emits arrays of activity IDs
    * @memberof RoomsAdapter
    */
   getPreviousRoomActivities(ID) {
@@ -82,7 +82,7 @@ export default class RoomsAdapter extends WebexAdapter {
    * Otherwise, it returns `false`.
    *
    * @param {string} ID ID of the room for which to verify activities.
-   * @returns {boolean}
+   * @returns {boolean} `true` if room has more activities to load, `false` otherwise
    * @memberof RoomsAdapter
    */
   hasMoreActivities(ID) {

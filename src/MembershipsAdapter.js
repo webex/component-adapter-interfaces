@@ -5,11 +5,11 @@ import WebexAdapter from './WebexAdapter';
 /**
  * A Membership object with details about the member.
  *
- * @typedef {Object} Membership
- * @property {string}             ID               The member identifier.
- * @property {string}             destinationID    ID of the destination for which to get members.
- * @property {string}             destinationType  type of the membership destination.
- * @property {Array.<Object>}     members          An array of members information.
+ * @typedef {object} Membership
+ * @property {string}          ID               The member identifier
+ * @property {string}          destinationID    ID of the destination for which to get members
+ * @property {string}          destinationType  type of the membership destination
+ * @property {Array.<object>}  members          An array of members information
  */
 
 /**
@@ -36,9 +36,9 @@ export default class MembershipsAdapter extends WebexAdapter {
    * Whenever there is an update to the membership, the observable
    * will emit a new updated Membership object, if datasource permits.
    *
-   * @param {string} destinationID  ID of the destination for which to get members.
-   * @param {DestinationType} destinationType  type of the membership destination.
-   * @returns {Observable.<Membership>}
+   * @param {string} destinationID  ID of the destination for which to get members
+   * @param {DestinationType} destinationType  type of the membership destination
+   * @returns {external:Observable.<Membership>} Observable stream that emits membership data
    * @memberof MembershipAdapter
    */
   getMembersFromDestination(destinationID, destinationType) {
