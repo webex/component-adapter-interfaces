@@ -13,6 +13,38 @@ describe('Meetings Adapter Interface', () => {
     meetingsAdapter = null;
   });
 
+  describe('createMeeting()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(meetingsAdapter.createMeeting())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      meetingsAdapter.createMeeting('sipURI@webex.com').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('createMeeting(destination) must be defined in MeetingsAdapter');
+          done();
+        },
+      );
+    });
+  });
+
+  describe('incomingMeeting()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(meetingsAdapter.incomingMeeting())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      meetingsAdapter.incomingMeeting('sipURI@webex.com').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('incomingMeeting(destination) must be defined in MeetingsAdapter');
+          done();
+        },
+      );
+    });
+  });
+
   describe('getMeeting()', () => {
     test('returns an observable', () => {
       expect(isObservable(meetingsAdapter.getMeeting())).toBeTruthy();
@@ -23,22 +55,6 @@ describe('Meetings Adapter Interface', () => {
         () => {},
         (error) => {
           expect(error.message).toBe('getMeeting(ID) must be defined in MeetingsAdapter');
-          done();
-        },
-      );
-    });
-  });
-
-  describe('createMeeting()', () => {
-    test('returns an observable', () => {
-      expect(isObservable(meetingsAdapter.createMeeting())).toBeTruthy();
-    });
-
-    test('errors because it needs to be defined', (done) => {
-      meetingsAdapter.createMeeting('sipURI@webex.com').subscribe(
-        () => {},
-        (error) => {
-          expect(error.message).toBe('createMeeting(ID) must be defined in MeetingsAdapter');
           done();
         },
       );
