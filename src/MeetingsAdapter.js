@@ -101,12 +101,27 @@ export default class MeetingsAdapter extends WebexAdapter {
    * Observable should complete after emitting data.
    * If there is an issue creating the meeting, the observable will error.
    *
-   * @param {string} destination  Virtual location where the meeting should take place
+   * @param {string} destination  Virtual location where the meeting will take place
    * @returns {external:Observable.<Meeting>} Observable stream that emits meeting data
    * @memberof MeetingsAdapter
    */
   createMeeting(destination) {
-    return throwError(new Error('createMeeting(ID) must be defined in MeetingsAdapter'));
+    return throwError(new Error('createMeeting(destination) must be defined in MeetingsAdapter'));
+  }
+
+  /**
+   * Listens for incoming meetings at the given destination.
+   * Returns an observable that emits a Meeting object with the data from the incoming meeting.
+   * `incomingMeeting` is mostly used for 1:1 meetings where a user tries to reach another user directly.
+   * This method only notifies that someone is trying to start a meeting, but it has to be used in
+   * conjunction with `joinMeeting` to actually join the meeting.
+   *
+   * @param {string} destination  Virtual location where meeting will take place
+   * @returns {external:Observable.<Meeting>} Observable stream that emits meeting data
+   * @memberof MeetingsAdapter
+   */
+  incomingMeeting(destination) {
+    return throwError(new Error('incomingMeeting(destination) must be defined in MeetingsAdapter'));
   }
 
   /**
