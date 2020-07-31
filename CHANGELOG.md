@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/webex/component-adapter-interfaces/compare/v1.10.1...v1.11.0) (2020-07-31)
+
+
+### Features
+
+* **MeetingAdapter:** add incomingMeeting() method definition ([8d21d15](https://github.com/webex/component-adapter-interfaces/commit/8d21d153c544cfb1f0766d8593c90139d1000a33))
+
 ## [1.10.1](https://github.com/webex/component-adapter-interfaces/compare/v1.10.0...v1.10.1) (2020-07-15)
 
 
