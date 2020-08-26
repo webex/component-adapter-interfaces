@@ -3,13 +3,23 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
- * A Membership object with details about the member.
+ * A Member object that is part of a membership.
+ *
+ * @typedef {object} Member
+ * @property {string}   ID        The member identifier
+ * @property {string}   orgID     The organization identifier
+ * @property {boolean}  muted     If the member's audio is currently muted
+ * @property {boolean}  sharing   If the member is currently sharing their screen
+ */
+
+/**
+ * A Membership object with details about the members.
  *
  * @typedef {object} Membership
- * @property {string}          ID               The member identifier
+ * @property {string}          ID               The membership identifier
  * @property {string}          destinationID    ID of the destination for which to get members
  * @property {string}          destinationType  type of the membership destination
- * @property {Array.<object>}  members          An array of members information
+ * @property {Array.<Member>}  members          An array of members information
  */
 
 /**
