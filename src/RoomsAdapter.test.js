@@ -13,52 +13,60 @@ describe('Rooms Adapter Interface', () => {
     roomsAdapter = null;
   });
 
-  test('getRoom() returns an observable', () => {
-    expect(isObservable(roomsAdapter.getRoom())).toBeTruthy();
+  describe('getRoom()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(roomsAdapter.getRoom())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      roomsAdapter.getRoom('ID').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getRoom(ID) must be defined in RoomsAdapter');
+          done();
+        },
+      );
+    });
   });
 
-  test('getRoom() errors because it needs to be defined', (done) => {
-    roomsAdapter.getRoom('ID').subscribe(
-      () => {},
-      (error) => {
-        expect(error.message).toBe('getRoom(ID) must be defined in RoomsAdapter');
-        done();
-      },
-    );
+  describe('getRoomActivities()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(roomsAdapter.getRoomActivities())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      roomsAdapter.getRoomActivities('id').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getRoomActivities(ID) must be defined in RoomsAdapter');
+          done();
+        },
+      );
+    });
   });
 
-  test('getRoomActivities() returns an observable', () => {
-    expect(isObservable(roomsAdapter.getRoomActivities())).toBeTruthy();
+  describe('getPreviousRoomActivities()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(roomsAdapter.getRoomActivities())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      roomsAdapter.getPreviousRoomActivities('id').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getPreviousRoomActivities(ID) must be defined in RoomsAdapter');
+          done();
+        },
+      );
+    });
   });
 
-  test('getRoomActivities() errors because it needs to be defined', (done) => {
-    roomsAdapter.getRoomActivities('id').subscribe(
-      () => {},
-      (error) => {
-        expect(error.message).toBe('getRoomActivities(ID) must be defined in RoomsAdapter');
-        done();
-      },
-    );
-  });
-
-  test('getPreviousRoomActivities() returns an observable', () => {
-    expect(isObservable(roomsAdapter.getRoomActivities())).toBeTruthy();
-  });
-
-  test('getPreviousRoomActivities() errors because it needs to be defined', (done) => {
-    roomsAdapter.getPreviousRoomActivities('id').subscribe(
-      () => {},
-      (error) => {
-        expect(error.message).toBe('getPreviousRoomActivities(ID) must be defined in RoomsAdapter');
-        done();
-      },
-    );
-  });
-
-  test('hasMoreActivities() errors because it needs to be defined', () => {
-    try {
-      expect(roomsAdapter.hasMoreActivities('ID')).toThrow();
-      // eslint-disable-next-line no-empty
-    } catch (error) {}
+  describe('hasMoreActivities()', () => {
+    test('errors because it needs to be defined', () => {
+      try {
+        expect(roomsAdapter.hasMoreActivities('ID')).toThrow();
+        // eslint-disable-next-line no-empty
+      } catch (error) {}
+    });
   });
 });
