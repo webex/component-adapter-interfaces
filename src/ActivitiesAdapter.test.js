@@ -13,17 +13,19 @@ describe('Activities Adapter Interface', () => {
     activitiesAdapter = null;
   });
 
-  test('getActivity() returns an observable', () => {
-    expect(isObservable(activitiesAdapter.getActivity())).toBeTruthy();
-  });
+  describe('getActivity()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(activitiesAdapter.getActivity())).toBeTruthy();
+    });
 
-  test('getActivity() errors because it needs to be defined', (done) => {
-    activitiesAdapter.getActivity('msgID').subscribe(
-      () => {},
-      (error) => {
-        expect(error.message).toBe('getActivity(ID) must be defined in ActivitiesAdapter');
-        done();
-      },
-    );
+    test('errors because it needs to be defined', (done) => {
+      activitiesAdapter.getActivity('msgID').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('getActivity(ID) must be defined in ActivitiesAdapter');
+          done();
+        },
+      );
+    });
   });
 });

@@ -13,7 +13,7 @@ describe('Webex Adapter Interface', () => {
     webexAdapter = null;
   });
 
-  test('WebexAdapter stores the data source', () => {
+  test('stores data source', () => {
     expect(webexAdapter.datasource).toBe(datasource);
   });
 });

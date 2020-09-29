@@ -13,7 +13,7 @@ describe('Memberships Adapter Interface', () => {
     membershipsAdapter = null;
   });
 
-  describe('getMembership()', () => {
+  describe('getMembersFromDestination()', () => {
     test('returns an observable', () => {
       const methodUnderTest = membershipsAdapter.getMembersFromDestination();
 
