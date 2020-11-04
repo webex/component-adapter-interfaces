@@ -6,10 +6,22 @@ import WebexAdapter from './WebexAdapter';
 /**
  * A Room object with details about the room.
  *
- * @typedef {object}  Room
- * @property {string}    ID     The room identifier
- * @property {string}    title  The room title
- * @property {RoomType}  type   The type of the room. @see {@link RoomType} enum
+ * @typedef {object} Room
+ * @property {string}   ID     The room identifier
+ * @property {string}   title  The room title
+ * @property {RoomType} type   The type of the room. @see {@link RoomType} enum
+ */
+
+/**
+ * An action a person performs in Webex.
+ *
+ * @typedef  {object} Activity
+ * @property {string}  ID             The activity identifier
+ * @property {string}  roomID         ID of the room where the activity happens
+ * @property {string}  text           Any text the activity may contain
+ * @property {string}  personID       ID of the person performing the activity
+ * @property {Date}    created        Timestamp of the time when the activity happened
+ * @property {boolean} displayAuthor  Whether to display author information or not
  */
 
 /**
