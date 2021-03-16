@@ -6,10 +6,11 @@ import WebexAdapter from './WebexAdapter';
  * A Member object that is part of a membership.
  *
  * @typedef {object} Member
- * @property {string}   ID        The member identifier
- * @property {string}   orgID     The organization identifier
- * @property {boolean}  muted     If the member's audio is currently muted
- * @property {boolean}  sharing   If the member is currently sharing their screen
+ * @property {string}   ID          The member identifier
+ * @property {string}   orgID       The organization identifier
+ * @property {boolean}  muted       If the member's audio is currently muted
+ * @property {boolean}  sharing     If the member is currently sharing their screen
+ * @property {boolean}  inMeeting   If the member is currently in meeting
  */
 
 /**
