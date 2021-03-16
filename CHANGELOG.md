@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/webex/component-adapter-interfaces/compare/v1.11.0...v1.12.0) (2021-03-16)
+
+
+### Features
+
+* **member:** update properties ([10f3c3d](https://github.com/webex/component-adapter-interfaces/commit/10f3c3d926aeae26aba5de2ca5a88e5a86d48d0c))
+
 # [1.11.0](https://github.com/webex/component-adapter-interfaces/compare/v1.10.1...v1.11.0) (2020-07-31)
 
 
