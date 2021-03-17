@@ -43,13 +43,13 @@ export const DestinationType = {
  */
 export default class MembershipsAdapter extends WebexAdapter {
   /**
-   * Returns an observable that emits a Membership object.
-   * Whenever there is an update to the membership, the observable
-   * will emit a new updated Membership object, if datasource permits.
+   * Returns an observable that emits an array of members.
+   * Whenever there is an update to this array, the observable
+   * will emit a new updated array of members, if datasource permits.
    *
    * @param {string} destinationID  ID of the destination for which to get members
    * @param {DestinationType} destinationType  type of the membership destination
-   * @returns {external:Observable.<Membership>} Observable stream that emits membership data
+   * @returns {external:Observable.<Array.<Member>>} Observable stream that emits an array of members
    * @memberof MembershipAdapter
    */
   getMembersFromDestination(destinationID, destinationType) {
