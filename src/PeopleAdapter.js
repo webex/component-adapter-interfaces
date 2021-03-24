@@ -3,7 +3,7 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
- * A Person object with details about the person.
+ * A user in Webex.
  *
  * @typedef {object} Person
  * @property {string}             ID          The person identifier
@@ -18,7 +18,7 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
- * Enum for person status values.
+ * All potential statuses of a person.
  *
  * @readonly
  * @enum {string}
