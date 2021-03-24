@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/webex/component-adapter-interfaces/compare/v1.12.0...v1.13.0) (2021-03-24)
+
+
+### Features
+
+* **orgs:** add OrganizationsAdapter definition ([600d54f](https://github.com/webex/component-adapter-interfaces/commit/600d54f7014e7f3aa856dc055e177b55bb3bce3a))
+
 # [1.12.0](https://github.com/webex/component-adapter-interfaces/compare/v1.11.0...v1.12.0) (2021-03-16)
 
 
