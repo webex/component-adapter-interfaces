@@ -4,7 +4,7 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
- * A Room object with details about the room.
+ * A virtual room where people can collaborate.
  *
  * @typedef {object}  Room
  * @property {string}    ID     The room identifier
@@ -19,7 +19,7 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
- * Enum for room type values.
+ * All potential types of rooms.
  *
  * @readonly
  * @enum {string}
