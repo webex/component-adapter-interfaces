@@ -3,7 +3,7 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
- * A Member object that is part of a membership.
+ * A person that is part of a membership.
  *
  * @typedef {object} Member
  * @property {string}   ID          The member identifier
@@ -14,7 +14,7 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
- * A Membership object with details about the members.
+ * A relationship between a destination and people that belong to such destination.
  *
  * @typedef {object} Membership
  * @property {string}          ID               The membership identifier
