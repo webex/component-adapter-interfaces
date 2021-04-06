@@ -12,6 +12,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {boolean}  sharing     If the member is currently sharing their screen
  * @property {boolean}  inMeeting   If the member is currently in meeting
  * @property {boolean}  host        If the member is the host of a meeting
+ * @property {boolean}  guest       If the member is guest in meeting
  */
 
 /**
