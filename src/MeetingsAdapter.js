@@ -28,6 +28,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {MediaStream}       remoteVideo  The remote video stream
  * @property {MediaStream}       remoteAudio  The remote audio stream
  * @property {MediaStream}       remoteShare  The remote media share stream
+ * @property {MeetingState}      state        The status of the meeting
  */
 
 /**
@@ -74,6 +75,19 @@ export const MeetingControlState = {
   ACTIVE: 'active',
   INACTIVE: 'inactive',
   DISABLED: 'disabled',
+};
+
+/**
+ * Enum for meeting states.
+ *
+ * @readonly
+ * @enum {string}
+ */
+export const MeetingState = {
+  ACTIVE: 'ACTIVE',
+  ENDED: 'ENDED',
+  JOINED: 'JOINED', // Inactive
+  NOT_STARTED: 'NOT_STARTED',
 };
 
 /**
