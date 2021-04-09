@@ -3,17 +3,20 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
- * A Member object that is part of a membership.
+ * A person that is part of a membership.
  *
  * @typedef {object} Member
- * @property {string}   ID        The member identifier
- * @property {string}   orgID     The organization identifier
- * @property {boolean}  muted     If the member's audio is currently muted
- * @property {boolean}  sharing   If the member is currently sharing their screen
+ * @property {string}   ID          The member identifier
+ * @property {string}   orgID       The organization identifier
+ * @property {boolean}  muted       If the member's audio is currently muted
+ * @property {boolean}  sharing     If the member is currently sharing their screen
+ * @property {boolean}  inMeeting   If the member is currently in meeting
+ * @property {boolean}  host        If the member is the host of a meeting
+ * @property {boolean}  guest       If the member is guest in meeting
  */
 
 /**
- * A Membership object with details about the members.
+ * A relationship between a destination and people that belong to such destination.
  *
  * @typedef {object} Membership
  * @property {string}          ID               The membership identifier
@@ -42,13 +45,13 @@ export const DestinationType = {
  */
 export default class MembershipsAdapter extends WebexAdapter {
   /**
-   * Returns an observable that emits a Membership object.
-   * Whenever there is an update to the membership, the observable
-   * will emit a new updated Membership object, if datasource permits.
+   * Returns an observable that emits an array of members.
+   * Whenever there is an update to this array, the observable
+   * will emit a new updated array of members, if datasource permits.
    *
    * @param {string} destinationID  ID of the destination for which to get members
    * @param {DestinationType} destinationType  type of the membership destination
-   * @returns {external:Observable.<Membership>} Observable stream that emits membership data
+   * @returns {external:Observable.<Array.<Member>>} Observable stream that emits an array of members
    * @memberof MembershipAdapter
    */
   getMembersFromDestination(destinationID, destinationType) {

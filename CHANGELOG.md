@@ -1,3 +1,31 @@
+# [1.15.0](https://github.com/webex/component-adapter-interfaces/compare/v1.14.0...v1.15.0) (2021-04-09)
+
+
+### Features
+
+* **MembershipsAdapter:** add the boolean property "guest" to the Member object ([de024ce](https://github.com/webex/component-adapter-interfaces/commit/de024ce8793883c6cbb09aa5244708ea5268ff66))
+
+# [1.14.0](https://github.com/webex/component-adapter-interfaces/compare/v1.13.0...v1.14.0) (2021-04-06)
+
+
+### Features
+
+* **MembershipsAdapter:** add the boolean property host for the Member object ([7593503](https://github.com/webex/component-adapter-interfaces/commit/7593503863ec98156bbb12eda4974fab9acdee8b))
+
+# [1.13.0](https://github.com/webex/component-adapter-interfaces/compare/v1.12.0...v1.13.0) (2021-03-24)
+
+
+### Features
+
+* **orgs:** add OrganizationsAdapter definition ([600d54f](https://github.com/webex/component-adapter-interfaces/commit/600d54f7014e7f3aa856dc055e177b55bb3bce3a))
+
+# [1.12.0](https://github.com/webex/component-adapter-interfaces/compare/v1.11.0...v1.12.0) (2021-03-16)
+
+
+### Features
+
+* **member:** update properties ([10f3c3d](https://github.com/webex/component-adapter-interfaces/commit/10f3c3d926aeae26aba5de2ca5a88e5a86d48d0c))
+
 # [1.11.0](https://github.com/webex/component-adapter-interfaces/compare/v1.10.1...v1.11.0) (2020-07-31)
 
 
