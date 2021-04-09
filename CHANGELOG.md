@@ -1,3 +1,10 @@
+# [1.16.0](https://github.com/webex/component-adapter-interfaces/compare/v1.15.0...v1.16.0) (2021-04-09)
+
+
+### Features
+
+* **MeetingsAdapter:** add status for meeting ([5f8345f](https://github.com/webex/component-adapter-interfaces/commit/5f8345fa4992be1f97ea3d0307385f8135b440f6))
+
 # [1.15.0](https://github.com/webex/component-adapter-interfaces/compare/v1.14.0...v1.15.0) (2021-04-09)
 
 
