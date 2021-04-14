@@ -28,7 +28,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {MediaStream}       remoteVideo  The remote video stream
  * @property {MediaStream}       remoteAudio  The remote audio stream
  * @property {MediaStream}       remoteShare  The remote media share stream
- * @property {MeetingState}      state        The status of the meeting
+ * @property {MeetingState}      state        The state of the meeting
  */
 
 /**
@@ -79,15 +79,15 @@ export const MeetingControlState = {
 
 /**
  * Enum for meeting states.
+ * A falsy value for the state (missing/undefined/null) means that the meeting has not been created yet.
  *
  * @readonly
  * @enum {string}
  */
 export const MeetingState = {
-  ACTIVE: 'ACTIVE',
-  ENDED: 'ENDED',
-  JOINED: 'JOINED', // Inactive
-  NOT_STARTED: 'NOT_STARTED',
+  NOT_JOINED: 'NOT_JOINED', // the meeting has been created (has an id), but the user has not yet started / joined
+  JOINED: 'JOINED', // the user has started / joined the meeting
+  LEFT: 'LEFT', // the user has left the meeting
 };
 
 /**
