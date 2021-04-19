@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/webex/component-adapter-interfaces/compare/v1.16.0...v1.16.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* **MeetingsAdapter:** change states for meeting ([eaf8092](https://github.com/webex/component-adapter-interfaces/commit/eaf80924ce32378f31cd45f92403ea77da430406))
+
 # [1.16.0](https://github.com/webex/component-adapter-interfaces/compare/v1.15.0...v1.16.0) (2021-04-09)
 
 
