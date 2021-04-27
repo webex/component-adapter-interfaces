@@ -18,4 +18,26 @@ export default class WebexAdapter {
   constructor(datasource) {
     this.datasource = datasource;
   }
+
+  /**
+   * Connects the adapter to its datasource.
+   *
+   * @returns {Promise} A promise that resolves when the adapter finishes connecting
+   */
+  connect() {
+    return Promise.reject(
+      new Error('connect() must be defined in WebexAdapter'),
+    );
+  }
+
+  /**
+   * Disconnects the adapter from its datasource.
+   *
+   * @returns {Promise} A promise that resolves when the adapter finishes disconnecting
+   */
+  disconnect() {
+    return Promise.reject(
+      new Error('disconnect() must be defined in WebexAdapter'),
+    );
+  }
 }
