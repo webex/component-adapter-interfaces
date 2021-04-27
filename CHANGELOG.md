@@ -1,3 +1,10 @@
+# [1.17.0](https://github.com/webex/component-adapter-interfaces/compare/v1.16.1...v1.17.0) (2021-04-27)
+
+
+### Features
+
+* **WebexAdapter:** add connect() and disconnect() functions ([11d2297](https://github.com/webex/component-adapter-interfaces/commit/11d2297a152daccdb019eafa3ef7a8940df32d29))
+
 ## [1.16.1](https://github.com/webex/component-adapter-interfaces/compare/v1.16.0...v1.16.1) (2021-04-19)
 
 
