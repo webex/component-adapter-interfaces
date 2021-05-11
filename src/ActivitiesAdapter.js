@@ -30,6 +30,8 @@ export default class ActivitiesAdapter extends WebexAdapter {
    * @memberof ActivityAdapter
    */
   getActivity(ID) {
+    console.log('Test');
+
     return throwError(new Error('getActivity(ID) must be defined in ActivitiesAdapter'));
   }
 }
