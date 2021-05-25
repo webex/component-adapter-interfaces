@@ -28,6 +28,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {MediaStream}       remoteVideo  The remote video stream
  * @property {MediaStream}       remoteAudio  The remote audio stream
  * @property {MediaStream}       remoteShare  The remote media share stream
+ * @property {boolean}           showSettings If the audio/video device selection component is displayed in meeting
  * @property {MeetingState}      state        The state of the meeting
  */
 
