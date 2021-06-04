@@ -91,6 +91,22 @@ export const MeetingState = {
 };
 
 /**
+ * Enum for media permissions states.
+ * A falsy value for the media permission means that it is unknown (eg: the meeting was just created).
+ *
+ * @readonly
+ * @enum {string}
+ */
+export const MediaPermissions = {
+  ASKING: 'ASKING', // set while requesting the user for permission to access media device
+  ALLOWED: 'ALLOWED', // set when the user has allowed permission to access media device
+  DENIED: 'DENIED', // set when the user has denied access to media device
+  DISMISSED: 'DISMISSED', // set when the user has dismissed the media device access prompt without allowing or denying access
+  ERROR: 'ERROR', // set when there is an error while requesting access to media device
+  IGNORED: 'IGNORED', // set when the user has chosen to not interact with the device access
+};
+
+/**
  * This is a base class that defines the interface that maps meetings data.
  * Developers that want to extend `MeetingsAdapter` must implement all of its methods,
  * adhering to the exact parameters and structure of the returned objects.
