@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/webex/component-adapter-interfaces/compare/v1.17.0...v1.18.0) (2021-06-10)
+
+
+### Features
+
+* **MeetingsAdapter:** add MediaPermissions enum ([6ad75a9](https://github.com/webex/component-adapter-interfaces/commit/6ad75a95c62f7ec92c4a0ae0d40d68996ced1de7))
+
 # [1.17.0](https://github.com/webex/component-adapter-interfaces/compare/v1.16.1...v1.17.0) (2021-04-27)
 
 
