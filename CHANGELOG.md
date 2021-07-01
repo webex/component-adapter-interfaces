@@ -1,3 +1,10 @@
+## [1.18.1](https://github.com/webex/component-adapter-interfaces/compare/v1.18.0...v1.18.1) (2021-07-01)
+
+
+### Bug Fixes
+
+* **MeetingsAdapter:** export MediaPermissions ([6a6fea7](https://github.com/webex/component-adapter-interfaces/commit/6a6fea794b80aa4f63c0d7a911b34aee4b31cec1))
+
 # [1.18.0](https://github.com/webex/component-adapter-interfaces/compare/v1.17.0...v1.18.0) (2021-06-10)
 
 
