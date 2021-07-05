@@ -2,9 +2,10 @@ export {default as WebexAdapter} from './WebexAdapter';
 export {default as ActivitiesAdapter} from './ActivitiesAdapter';
 export {
   default as MeetingsAdapter,
+  MediaPermissions,
   MeetingControlState,
   MeetingState,
-  MediaPermissions,
+  MeetingStreamState,
 } from './MeetingsAdapter';
 export {default as MembershipsAdapter, DestinationType} from './MembershipsAdapter';
 export {default as OrganizationsAdapter} from './OrganizationsAdapter';

@@ -17,6 +17,14 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * An object that represents a media stream and its state.
+ *
+ * @typedef {object} MeetingStream
+ * @property {MediaStream}        stream  The local media share stream
+ * @property {MeetingStreamState} state   The local share state @see {@link MeetingStreamState} enum
+ */
+
+/**
  * A meeting object that allows users to have a WebRTC meeting.
  *
  * @typedef {object}  Meeting
@@ -24,7 +32,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {string}            title        The title of the meeting
  * @property {MediaStreamTrack}  localVideo   The local video stream track
  * @property {MediaStreamTrack}  localAudio   The local audio stream track
- * @property {MediaStream}       localShare   The local media share stream
+ * @property {MeetingStream}     localShare   The local share information
  * @property {MediaStream}       remoteVideo  The remote video stream
  * @property {MediaStream}       remoteAudio  The remote audio stream
  * @property {MediaStream}       remoteShare  The remote media share stream
@@ -104,6 +112,21 @@ export const MediaPermissions = {
   DISMISSED: 'DISMISSED', // set when the user has dismissed the media device access prompt without allowing or denying access
   ERROR: 'ERROR', // set when there is an error while requesting access to media device
   IGNORED: 'IGNORED', // set when the user has chosen to not interact with the device access
+};
+
+/**
+ * Enum for meeting local share state.
+ *
+ * @readonly
+ * @enum {string}
+ */
+export const MeetingStreamState = {
+  ENABLED: 'enabled', // media stream is actively sending data
+  DISABLED: 'disabled', // media stream is muted
+  ENABLING: 'enabling', // temporary state between DISABLED and ENABLED
+  DISABLING: 'disabling', // temporary state between ENABLED and DISABLED
+  STOPPED: 'stopped', // media stream has been stopped and can no longer be used
+  NOT_AVAILABLE: 'not-available', // media stream cannot be obtained
 };
 
 /**
