@@ -17,18 +17,26 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * An object that represents a media stream and its permission.
+ *
+ * @typedef {object}  MeetingStream
+ * @property {MediaStream}      stream      The local media stream
+ * @property {MediaPermissions} permission  The state of the user permission on local media @see {@link MediaPermissions} enum
+ */
+
+/**
  * A meeting object that allows users to have a WebRTC meeting.
  *
  * @typedef {object}  Meeting
- * @property {string}            ID           The meeting identifier
- * @property {string}            title        The title of the meeting
- * @property {MediaStreamTrack}  localVideo   The local video stream track
- * @property {MediaStreamTrack}  localAudio   The local audio stream track
- * @property {MediaStream}       localShare   The local media share stream
- * @property {MediaStream}       remoteVideo  The remote video stream
- * @property {MediaStream}       remoteAudio  The remote audio stream
- * @property {MediaStream}       remoteShare  The remote media share stream
- * @property {MeetingState}      state        The state of the meeting
+ * @property {string}        ID           The meeting identifier
+ * @property {string}        title        The title of the meeting
+ * @property {MeetingStream} localVideo   The local video stream
+ * @property {MeetingStream} localAudio   The local audio stream
+ * @property {MediaStream}   localShare   The local media share stream
+ * @property {MediaStream}   remoteVideo  The remote video stream
+ * @property {MediaStream}   remoteAudio  The remote audio stream
+ * @property {MediaStream}   remoteShare  The remote media share stream
+ * @property {MeetingState}  state        The state of the meeting
  */
 
 /**
