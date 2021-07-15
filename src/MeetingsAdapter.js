@@ -17,6 +17,13 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * An object that represents a media stream.
+ *
+ * @typedef {object} MeetingStream
+ * @property {MediaStream} stream  The media stream
+ */
+
+/**
  * A meeting object that allows users to have a WebRTC meeting.
  *
  * @typedef {object}  Meeting
@@ -24,7 +31,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {string}            title        The title of the meeting
  * @property {MediaStreamTrack}  localVideo   The local video stream track
  * @property {MediaStreamTrack}  localAudio   The local audio stream track
- * @property {MediaStream}       localShare   The local media share stream
+ * @property {MeetingStream}     localShare   The local share information
  * @property {MediaStream}       remoteVideo  The remote video stream
  * @property {MediaStream}       remoteAudio  The remote audio stream
  * @property {MediaStream}       remoteShare  The remote media share stream
