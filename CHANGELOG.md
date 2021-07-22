@@ -1,3 +1,10 @@
+# [1.19.0](https://github.com/webex/component-adapter-interfaces/compare/v1.18.1...v1.19.0) (2021-07-22)
+
+
+### Features
+
+* **MeetingsAdapter:** transform localAudio, localShare and localVideo into objects ([9f6aeca](https://github.com/webex/component-adapter-interfaces/commit/9f6aeca552878ae0f217160a5b57df2b75527504))
+
 ## [1.18.1](https://github.com/webex/component-adapter-interfaces/compare/v1.18.0...v1.18.1) (2021-07-01)
 
 
