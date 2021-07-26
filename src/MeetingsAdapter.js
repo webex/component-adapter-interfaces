@@ -30,6 +30,9 @@ import WebexAdapter from './WebexAdapter';
  * @property {MediaStream}   remoteAudio  The remote audio stream
  * @property {MediaStream}   remoteShare  The remote media share stream
  * @property {MeetingState}  state        The state of the meeting
+ * @property {string}        cameraID     The ID of the camera in use
+ * @property {string}        microphoneID The ID of the microphone in use
+ * @property {string}        speakerID    The ID of the speaker in use
  */
 
 /**
