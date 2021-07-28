@@ -1,3 +1,10 @@
+# [1.20.0](https://github.com/webex/component-adapter-interfaces/compare/v1.19.0...v1.20.0) (2021-07-28)
+
+
+### Features
+
+* **MeetingsAdapter:** add devices ids in meeting object ([1952267](https://github.com/webex/component-adapter-interfaces/commit/1952267822b53cc4912ada1d10925a1e9d8d59fe))
+
 # [1.19.0](https://github.com/webex/component-adapter-interfaces/compare/v1.18.1...v1.19.0) (2021-07-22)
 
 
