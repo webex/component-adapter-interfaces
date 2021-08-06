@@ -60,6 +60,20 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * Enum for meeting control types
+ *
+ * @readonly
+ * @enum {string}
+ */
+export const MeetingControlType = {
+  JOIN: 'JOIN',
+  CANCEL: 'CANCEL',
+  CLOSE: 'CLOSE',
+  TOGGLE: 'TOGGLE',
+  MULTISELECT: 'MULTISELECT',
+};
+
+/**
  * Display options of a meeting control.
  *
  * @typedef {object}  MeetingControlDisplay
@@ -67,6 +81,7 @@ import WebexAdapter from './WebexAdapter';
  * @property {string}               tooltip  The text to display when user hovers over control
  * @property {string}               icon     Momentum-ui icon name to display for the meeting control
  * @property {string}               text     Text to display on the meeting control. If there is an icon and text, text takes precedence
+ * @property {MeetingControlType}   type     Type of the meeting control
  */
 
 /**

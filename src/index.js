@@ -3,6 +3,7 @@ export {default as ActivitiesAdapter} from './ActivitiesAdapter';
 export {
   default as MeetingsAdapter,
   MeetingControlState,
+  MeetingControlType,
   MeetingState,
   MediaPermissions,
 } from './MeetingsAdapter';
