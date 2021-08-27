@@ -1,3 +1,10 @@
+# [1.21.0](https://github.com/webex/component-adapter-interfaces/compare/v1.20.0...v1.21.0) (2021-08-27)
+
+
+### Features
+
+* **MeetingsAdapter:** add types for meeting controls ([f762b09](https://github.com/webex/component-adapter-interfaces/commit/f762b0926f313b6de2de8f6f05ff4f597925d801))
+
 # [1.20.0](https://github.com/webex/component-adapter-interfaces/compare/v1.19.0...v1.20.0) (2021-07-28)
 
 
