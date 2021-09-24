@@ -1,10 +1,10 @@
 version: 2.1
 
 executors:
-  node-erbium-executor:
+  node-executor:
     working_directory: ~/component-adapter-interfaces
     docker:
-      - image: circleci/node:erbium
+      - image: circleci/node:fermium
 
 # reusable command for all jobs
 commands:
@@ -18,7 +18,7 @@ commands:
 # define jobs
 jobs:
   install:
-    executor: node-erbium-executor
+    executor: node-executor
     steps:
       - checkout
       - restore_cache:
@@ -35,7 +35,7 @@ jobs:
           paths: node_modules
 
   test:
-    executor: node-erbium-executor
+    executor: node-executor
     steps:
       - checkout_from_workspace
       - run:
@@ -48,7 +48,7 @@ jobs:
           path: test_results
 
   build:
-    executor: node-erbium-executor
+    executor: node-executor
     steps:
       - checkout_from_workspace
       - run:
@@ -59,7 +59,7 @@ jobs:
           paths: dist
 
   release:
-    executor: node-erbium-executor
+    executor: node-executor
     steps:
       - checkout_from_workspace
       - run:
