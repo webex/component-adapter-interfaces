@@ -214,4 +214,13 @@ export default class MeetingsAdapter extends WebexAdapter {
   leaveMeeting(ID) {
     throw new Error('leaveMeeting(ID) must be defined in MeetingsAdapter');
   }
+
+  /**
+   * Displays the names of the available controls.
+   *
+   * @returns {string[]} Array containing the control names supported.
+   */
+  supportedControls() {
+    return throwError(new Error('supportedControls() must be defined in MeetingsAdapter'));
+  }
 }
