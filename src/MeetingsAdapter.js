@@ -21,18 +21,20 @@ import WebexAdapter from './WebexAdapter';
  * A meeting object that allows users to have a WebRTC meeting.
  *
  * @typedef {object}  Meeting
- * @property {string}        ID           The meeting identifier
- * @property {string}        title        The title of the meeting
- * @property {MeetingStream} localVideo   The local video information
- * @property {MeetingStream} localAudio   The local audio information
- * @property {MeetingStream} localShare   The local share information
- * @property {MediaStream}   remoteVideo  The remote video stream
- * @property {MediaStream}   remoteAudio  The remote audio stream
- * @property {MediaStream}   remoteShare  The remote media share stream
- * @property {MeetingState}  state        The state of the meeting
- * @property {string}        cameraID     The ID of the camera in use
- * @property {string}        microphoneID The ID of the microphone in use
- * @property {string}        speakerID    The ID of the speaker in use
+ * @property {string}        ID               The meeting identifier
+ * @property {string}        title            The title of the meeting
+ * @property {MeetingStream} localVideo       The local video information
+ * @property {MeetingStream} localAudio       The local audio information
+ * @property {MeetingStream} localShare       The local share information
+ * @property {MediaStream}   remoteVideo      The remote video stream
+ * @property {MediaStream}   remoteAudio      The remote audio stream
+ * @property {MediaStream}   remoteShare      The remote media share stream
+ * @property {MeetingState}  state            The state of the meeting
+ * @property {string}        cameraID         The ID of the camera in use
+ * @property {string}        microphoneID     The ID of the microphone in use
+ * @property {string}        speakerID        The ID of the speaker in use
+ * @property {boolean}       passwordRequired If the meeting requires a password
+ * @property {boolean}       invalidPassword  If the password received from the user is invalid
  */
 
 /**
@@ -222,5 +224,25 @@ export default class MeetingsAdapter extends WebexAdapter {
    */
   supportedControls() {
     return throwError(new Error('supportedControls() must be defined in MeetingsAdapter'));
+  }
+
+  /**
+   * Sets the passwordRequired flag to false.
+   *
+   * @param {string} ID  Id of the meeting
+   * @returns {Promise|undefined}
+   */
+  clearPasswordRequiredFlag(ID) {
+    throw new Error('clearPasswordRequiredFlag(ID) must be defined in MeetingsAdapter');
+  }
+
+  /**
+   * Sets the invalidPassword flag to false.
+   *
+   * @param {string} ID  Id of the meeting
+   * @returns {Promise|undefined}
+   */
+  clearInvalidPasswordFlag(ID) {
+    throw new Error('clearInvalidPasswordFlag(ID) must be defined in MeetingsAdapter');
   }
 }
