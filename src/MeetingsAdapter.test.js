@@ -72,4 +72,16 @@ describe('Meetings Adapter Interface', () => {
       expect(() => meetingsAdapter.leaveMeeting('meetingID')).toThrow('leaveMeeting(ID) must be defined in MeetingsAdapter');
     });
   });
+
+  describe('clearPasswordRequiredFlag()', () => {
+    test('errors because it needs to be defined', () => {
+      expect(() => meetingsAdapter.clearPasswordRequiredFlag('meetingID')).toThrow('clearPasswordRequiredFlag(ID) must be defined in MeetingsAdapter');
+    });
+  });
+
+  describe('clearInvalidPasswordFlag()', () => {
+    test('errors because it needs to be defined', () => {
+      expect(() => meetingsAdapter.clearInvalidPasswordFlag('meetingID')).toThrow('clearInvalidPasswordFlag(ID) must be defined in MeetingsAdapter');
+    });
+  });
 });
