@@ -107,6 +107,7 @@ export const MeetingControlState = {
  */
 export const MeetingState = {
   NOT_JOINED: 'NOT_JOINED', // the meeting has been created (has an id), but the user has not yet started / joined
+  LOBBY: 'LOBBY', // the user is waiting to be admitted into the meeting
   JOINED: 'JOINED', // the user has started / joined the meeting
   LEFT: 'LEFT', // the user has left the meeting
 };
