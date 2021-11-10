@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/webex/component-adapter-interfaces/compare/v1.21.0...v1.22.0) (2021-11-10)
+
+
+### Features
+
+* **MeetingsAdapter:** add "lobby" state in meeting states ([045522b](https://github.com/webex/component-adapter-interfaces/commit/045522b27c0b214962304f41a2e4eea4dd21c156))
+
 # [1.21.0](https://github.com/webex/component-adapter-interfaces/compare/v1.20.0...v1.21.0) (2021-08-27)
 
 
