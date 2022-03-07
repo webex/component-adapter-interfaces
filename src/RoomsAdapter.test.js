@@ -29,32 +29,32 @@ describe('Rooms Adapter Interface', () => {
     });
   });
 
-  describe('getRoomActivities()', () => {
+  describe('getActivitiesInRealTime()', () => {
     test('returns an observable', () => {
-      expect(isObservable(roomsAdapter.getRoomActivities())).toBeTruthy();
+      expect(isObservable(roomsAdapter.getActivitiesInRealTime())).toBeTruthy();
     });
 
     test('errors because it needs to be defined', (done) => {
-      roomsAdapter.getRoomActivities('id').subscribe(
+      roomsAdapter.getActivitiesInRealTime('id').subscribe(
         () => {},
         (error) => {
-          expect(error.message).toBe('getRoomActivities(ID) must be defined in RoomsAdapter');
+          expect(error.message).toBe('getActivitiesInRealTime(ID) must be defined in RoomsAdapter');
           done();
         },
       );
     });
   });
 
-  describe('getPreviousRoomActivities()', () => {
+  describe('getPastActivities()', () => {
     test('returns an observable', () => {
-      expect(isObservable(roomsAdapter.getRoomActivities())).toBeTruthy();
+      expect(isObservable(roomsAdapter.getActivitiesInRealTime())).toBeTruthy();
     });
 
     test('errors because it needs to be defined', (done) => {
-      roomsAdapter.getPreviousRoomActivities('id').subscribe(
+      roomsAdapter.getPastActivities('id').subscribe(
         () => {},
         (error) => {
-          expect(error.message).toBe('getPreviousRoomActivities(ID) must be defined in RoomsAdapter');
+          expect(error.message).toBe('getPastActivities(ID) must be defined in RoomsAdapter');
           done();
         },
       );

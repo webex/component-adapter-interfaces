@@ -59,22 +59,22 @@ export default class RoomsAdapter extends WebexAdapter {
    * @returns {external:Observable.<Array.<string|ActivityDate>>} Observable stream that emits arrays of activity IDs
    * @memberof RoomsAdapter
    */
-  getRoomActivities(ID) {
-    return throwError(new Error('getRoomActivities(ID) must be defined in RoomsAdapter'));
+  getActivitiesInRealTime(ID) {
+    return throwError(new Error('getActivitiesInRealTime(ID) must be defined in RoomsAdapter'));
   }
 
   /**
    * Returns an observable that emits an array of the next chunk of previous
    * activity data of the given roomID. If `hasMoreActivities` returns false,
    * the observable will complete.
-   * **Previous activity data must be sorted newest-to-oldest.**
+   * **Past activity data must be sorted newest-to-oldest.**
    *
    * @param {string} ID  ID of the room for which to get activities.
    * @returns {external:Observable.<Array.<string|ActivityDate>>} Observable stream that emits arrays of activity IDs
    * @memberof RoomsAdapter
    */
-  getPreviousRoomActivities(ID) {
-    return throwError(new Error('getPreviousRoomActivities(ID) must be defined in RoomsAdapter'));
+  getPastActivities(ID) {
+    return throwError(new Error('getPastActivities(ID) must be defined in RoomsAdapter'));
   }
 
   /**
