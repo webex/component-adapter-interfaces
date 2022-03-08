@@ -1,14 +1,14 @@
 import MetricsAdapter from './MetricsAdapter';
 
 describe('Metrics Adapter Interface', () => {
-  let metricssAdapter;
+  let metricsAdapter;
 
   beforeEach(() => {
-    metricssAdapter = new MetricsAdapter();
+    metricsAdapter = new MetricsAdapter();
   });
 
   afterEach(() => {
-    metricssAdapter = null;
+    metricsAdapter = null;
   });
 
   describe('submitMetrics()', () => {
@@ -25,7 +25,7 @@ describe('Metrics Adapter Interface', () => {
       eventPayload: {value: 'splunk business metric payload'}
     };
     test('errors because it needs to be defined', () => {
-      expect(() => metricssAdapter.submitMetrics('test_event', mockPayload)).toThrow('submitMetrics(eventName, props, preLoginId) must be defined in MetricsAdapter');
+      expect(() => metricsAdapter.submitMetrics('test_event', mockPayload)).toThrow('submitMetrics(eventName, props, preLoginId) must be defined in MetricsAdapter');
     });
   });
 
