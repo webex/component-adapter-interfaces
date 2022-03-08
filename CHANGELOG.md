@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/webex/component-adapter-interfaces/compare/v1.22.0...v1.23.0) (2022-03-08)
+
+
+### Features
+
+* **RoomsAdapter:** update room adapter method names ([4148e86](https://github.com/webex/component-adapter-interfaces/commit/4148e86793c5e8f5e12e01ec384b66886531309d))
+
 # [1.22.0](https://github.com/webex/component-adapter-interfaces/compare/v1.21.0...v1.22.0) (2021-11-10)
 
 
