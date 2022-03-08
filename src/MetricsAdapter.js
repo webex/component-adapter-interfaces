@@ -1,5 +1,3 @@
-import {throwError} from 'rxjs';
-
 import WebexAdapter from './WebexAdapter';
 
 /**
@@ -31,6 +29,6 @@ export default class MetricsAdapter extends WebexAdapter {
    * @memberof MetricsAdapter
    */
   submitMetrics(eventName, props, preLoginId) {
-    return throwError(new Error('submitMetrics(eventName, props, preLoginId) must be defined in MetricsAdapter'));
+    throw new Error('submitMetrics(eventName, props, preLoginId) must be defined in MetricsAdapter');
   }
 }
