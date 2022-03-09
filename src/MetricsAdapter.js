@@ -12,6 +12,18 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * All potential types of a metric.
+ *
+ * @readonly
+ * @enum {string}
+ */
+export const MetricType = {
+  BEHAVIORAL: 'behavioral',
+  BUSINESS: 'business',
+  OPERATIONAL: 'operational',
+};
+
+/**
  * This is a base class that defines the interface that maps activity data.
  * Developers that want to extend `MetricsAdapter` must implement all of its methods,
  * adhering to the exact parameters and structure of the returned objects.
