@@ -5,7 +5,7 @@ import WebexAdapter from './WebexAdapter';
  *
  * @typedef  {object}     Metric
  * @property {MetricType} type          The type of metric to be captured
- * @property {string}     metricName    The metric name
+ * @property {string}     name          The metric name
  * @property {object}     fields        The data to be sent in metric
  * @property {object}     tags          Tags for categorization
  * @property {object}     eventPayload  Business metric payload
@@ -35,7 +35,7 @@ export default class MetricsAdapter extends WebexAdapter {
    * submit metrics to metric service.
    *
    * @param {Metric} metric      metric object containing type, fields, tags
-   * @param {string} preLoginId  pre logged in id if available
+   * @param {string} [preLoginId]  pre logged in id if available
    * @returns {Promise|undefined}
    * @memberof MetricsAdapter
    */
