@@ -3,12 +3,12 @@ import WebexAdapter from './WebexAdapter';
 /**
  * A metric sent to webex.
  *
- * @typedef  {object} Metric
- * @property {string}  type           type of metric to be captured
- * @property {string}  metricName     name of the metric
- * @property {object}  fields         data to be sent in the metric
- * @property {object}  tags           tags for categorization
- * @property {object}  eventPayload   business metric payload
+ * @typedef  {object}     Metric
+ * @property {MetricType} type          The type of metric to be captured
+ * @property {string}     metricName    The metric name
+ * @property {object}     fields        The data to be sent in metric
+ * @property {object}     tags          Tags for categorization
+ * @property {object}     eventPayload  Business metric payload
  */
 
 /**
@@ -24,7 +24,7 @@ export const MetricType = {
 };
 
 /**
- * This is a base class that defines the interface that maps activity data.
+ * This is a base class that defines the interface for sending metrics.
  * Developers that want to extend `MetricsAdapter` must implement all of its methods,
  * adhering to the exact parameters and structure of the returned objects.
  *
@@ -33,14 +33,13 @@ export const MetricType = {
 export default class MetricsAdapter extends WebexAdapter {
   /**
    * submit metrics to metric service.
-   * This method does not return a value as API returns 204
    *
-   * @param {string} eventName  metric name
-   * @param {object} props      metric object containing type, fields, tags
-   * @param {string} preLoginId pre logged in id if available
+   * @param {Metric} metric      metric object containing type, fields, tags
+   * @param {string} preLoginId  pre logged in id if available
+   * @returns {Promise|undefined}
    * @memberof MetricsAdapter
    */
-  submitMetrics(eventName, props, preLoginId) {
-    throw new Error('submitMetrics(eventName, props, preLoginId) must be defined in MetricsAdapter');
+  submitMetrics(metric, preLoginId) {
+    throw new Error('submitMetrics(metric, preLoginId) must be defined in MetricsAdapter');
   }
 }

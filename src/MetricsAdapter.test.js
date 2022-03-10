@@ -13,7 +13,7 @@ describe('Metrics Adapter Interface', () => {
 
   describe('submitMetrics()', () => {
     const eventName = 'test_event';
-    const mockPayload = {
+    const mockMetric = {
       fields: {
         testField: 123,
       },
@@ -26,7 +26,7 @@ describe('Metrics Adapter Interface', () => {
     };
 
     test('errors because it needs to be defined', () => {
-      expect(() => metricsAdapter.submitMetrics(eventName, mockPayload)).toThrow('submitMetrics(eventName, props, preLoginId) must be defined in MetricsAdapter');
+      expect(() => metricsAdapter.submitMetrics(eventName, mockMetric)).toThrow('submitMetrics(metric, preLoginId) must be defined in MetricsAdapter');
     });
   });
 });
