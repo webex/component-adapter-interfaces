@@ -1,3 +1,5 @@
+import {throwError} from 'rxjs';
+
 import WebexAdapter from './WebexAdapter';
 
 /**
@@ -34,12 +36,14 @@ export default class MetricsAdapter extends WebexAdapter {
   /**
    * submit metrics to metric service.
    *
-   * @param {Metric} metric      metric object containing type, fields, tags
-   * @param {string} [preLoginId]  pre logged in id if available
-   * @returns {Promise|undefined}
+   * @param {Metric} metric metric object containing type, fields, tags
+   * @param {string} [preLoginID] ID of person during onboarding
+   * @returns {external:Observable.<Metric>} Observable stream that emits metric data
    * @memberof MetricsAdapter
    */
-  submitMetrics(metric, preLoginId) {
-    throw new Error('submitMetrics(metric, preLoginId) must be defined in MetricsAdapter');
+  submitMetrics(metric, preLoginID) {
+    return throwError(
+      new Error('submitMetrics(metric, preLoginID) must be defined in MetricsAdapter'),
+    );
   }
 }

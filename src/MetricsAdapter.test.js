@@ -25,8 +25,16 @@ describe('Metrics Adapter Interface', () => {
       eventPayload: {value: 'splunk business metric payload'},
     };
 
-    test('errors because it needs to be defined', () => {
-      expect(() => metricsAdapter.submitMetrics(eventName, mockMetric)).toThrow('submitMetrics(metric, preLoginId) must be defined in MetricsAdapter');
+    test('errors because it needs to be defined', (done) => {
+      const message = 'submitMetrics(metric, preLoginID) must be defined in MetricsAdapter';
+
+      metricsAdapter.submitMetrics(eventName, mockMetric).subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe(message);
+          done();
+        },
+      );
     });
   });
 });
