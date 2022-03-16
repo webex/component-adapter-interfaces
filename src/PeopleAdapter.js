@@ -68,4 +68,16 @@ export default class PeopleAdapter extends WebexAdapter {
   getPerson(ID) {
     return throwError(new Error('getPerson(ID) must be defined in PeopleAdapter'));
   }
+
+  /**
+   * Returns an observable that emits a list of people that match the given query.
+   * An empty array is returned when there are no matches.
+   *
+   * @param {string} query Search query
+   * @returns {external:Observable.<Person[]>} Observable that emits person list based on search query
+   * @memberof PeopleAdapter
+   */
+  searchPeople(query) {
+    return throwError(new Error('searchPeople(query) must be defined in PeopleAdapter'));
+  }
 }
