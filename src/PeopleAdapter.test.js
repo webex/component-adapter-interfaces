@@ -44,4 +44,20 @@ describe('People Adapter Interface', () => {
       );
     });
   });
+
+  describe('searchPeople()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(peopleAdapter.searchPeople())).toBeTruthy();
+    });
+
+    test('returns error because searchPeople needs to be defined', (done) => {
+      peopleAdapter.searchPeople('query').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('searchPeople(query) must be defined in PeopleAdapter');
+          done();
+        },
+      );
+    });
+  });
 });
