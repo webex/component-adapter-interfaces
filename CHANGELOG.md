@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/webex/component-adapter-interfaces/compare/v1.23.0...v1.24.0) (2022-03-16)
+
+
+### Features
+
+* **PeopleAdapter:** add searchPeople method ([cb5a793](https://github.com/webex/component-adapter-interfaces/commit/cb5a7935a016ac3978c61b4a833bd7d9cdee8903))
+
 # [1.23.0](https://github.com/webex/component-adapter-interfaces/compare/v1.22.0...v1.23.0) (2022-03-08)
 
 
