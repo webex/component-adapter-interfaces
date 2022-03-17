@@ -1,3 +1,10 @@
+# [1.25.0](https://github.com/webex/component-adapter-interfaces/compare/v1.24.0...v1.25.0) (2022-03-17)
+
+
+### Features
+
+* **MetricsAdapter:** add submitMetrics method ([6e0b215](https://github.com/webex/component-adapter-interfaces/commit/6e0b215df86b6f722ddee58fe0ee9e5314a8486c))
+
 # [1.24.0](https://github.com/webex/component-adapter-interfaces/compare/v1.23.0...v1.24.0) (2022-03-16)
 
 
