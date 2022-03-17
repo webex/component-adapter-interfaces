@@ -3,15 +3,25 @@ import {throwError} from 'rxjs';
 import WebexAdapter from './WebexAdapter';
 
 /**
+ * An attachment of an activity in Webex.
+ *
+ * @typedef  {object} ActivityAttachment
+ * @property {string} contentType  Content type of the Attachment
+ * @property {string} content      Attachment content
+ */
+
+/**
  * An activity a person performs in Webex.
  *
  * @typedef  {object} Activity
- * @property {string}  ID             The activity identifier
- * @property {string}  roomID         ID of the room where the activity happens
- * @property {string}  text           Any text the activity may contain
- * @property {string}  personID       ID of the person performing the activity
- * @property {Date}    created        Timestamp of the time when the activity happened
- * @property {boolean} displayAuthor  Whether to display author information or not
+ * @property {string}                    ID             The activity identifier
+ * @property {string}                    roomID         ID of the room where the activity happens
+ * @property {string}                    text           Any text the activity may contain
+ * @property {string}                    personID       ID of the person performing the activity
+ * @property {Array<object>}             cards          Adaptive cards (parsed)
+ * @property {Date}                      created        Timestamp of the time when the activity happened
+ * @property {boolean}                   displayAuthor  Whether to display author information or not
+ * @property {Array<ActivityAttachment>} attachments    Attachments
  */
 
 /**
