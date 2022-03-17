@@ -1,3 +1,10 @@
+# [1.26.0](https://github.com/webex/component-adapter-interfaces/compare/v1.25.0...v1.26.0) (2022-03-17)
+
+
+### Features
+
+* **RoomsAdapter:** add createRoom method ([4e7c682](https://github.com/webex/component-adapter-interfaces/commit/4e7c682723716aa03e8b19094ad5398bdd037f01))
+
 # [1.25.0](https://github.com/webex/component-adapter-interfaces/compare/v1.24.0...v1.25.0) (2022-03-17)
 
 
