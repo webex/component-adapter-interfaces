@@ -29,6 +29,26 @@ describe('Rooms Adapter Interface', () => {
     });
   });
 
+  describe('createRoom()', () => {
+    test('returns an observable', () => {
+      expect(isObservable(roomsAdapter.createRoom())).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      const room = {
+        title: 'test space',
+      };
+
+      roomsAdapter.createRoom(room).subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe('createRoom(room) must be defined in RoomsAdapter');
+          done();
+        },
+      );
+    });
+  });
+
   describe('getActivitiesInRealTime()', () => {
     test('returns an observable', () => {
       expect(isObservable(roomsAdapter.getActivitiesInRealTime())).toBeTruthy();

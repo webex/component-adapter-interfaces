@@ -53,6 +53,18 @@ export default class RoomsAdapter extends WebexAdapter {
   }
 
   /**
+   * Returns an observable that emits room data of the recently created room
+   * Observable will complete after one emission.
+   *
+   * @param {Room} room  Information about the room to create.
+   * @returns {external:Observable.<Room>} Observable stream that emits room data.
+   * @memberof RoomsAdapter
+   */
+  createRoom(room) {
+    return throwError(new Error('createRoom(room) must be defined in RoomsAdapter'));
+  }
+
+  /**
    * Returns an observable that emits an array of current and future activities of the given roomID.
    *
    * @param {string} ID  ID of the room for which to get activities.
