@@ -26,6 +26,16 @@ import WebexAdapter from './WebexAdapter';
  */
 
 /**
+ * Members data and room ID to add members to room
+ *
+ * @typedef {object} RoomMembership
+ * @property {string} roomID The ID of the room in which members are added
+ * @property {Array} personID ID of the members if personEmail not used
+ * @property {Array} personEmail Email of the members if personID not used
+ * @property {boolean} isModerator Boolean if member added as a moderator
+ */
+
+/**
  * Enum for types of destinations.
  *
  * @readonly
@@ -58,5 +68,19 @@ export default class MembershipsAdapter extends WebexAdapter {
     return throwError(
       new Error('getMembersFromDestination(destinationID, destinationType) must be defined in MembershipsAdapter'),
     );
+  }
+
+  /**
+   * Add members to room for the given room ID.
+   * Returns an observable that emits the Member array with the data
+   * after adding members to room.
+   * Observable will complete after one emission.
+   *
+   * @param {RoomMembership} RoomMembership Information to add members to given room ID
+   * @returns {Observable<Member[]>} Observable stream that emits an array of member data
+   * @memberof MembershipAdapter
+   */
+  addMembersToRoom(RoomMembership) {
+    return throwError(new Error('addMembersToRoom must be defined in Membership adapter'));
   }
 }

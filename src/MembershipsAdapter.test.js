@@ -32,4 +32,28 @@ describe('Memberships Adapter Interface', () => {
       );
     });
   });
+
+  describe('addMembersToRoom()', () => {
+    const members = {
+      roomId: 'roomId',
+      personEmail: ['brenda@acme11.com'],
+      isModerator: false,
+    };
+
+    test('returns an observable', () => {
+      expect(isObservable(membershipsAdapter.addMembersToRoom(members))).toBeTruthy();
+    });
+
+    test('returns error because addMembersToRoom needs to be defined', (done) => {
+      const message = 'addMembersToRoom must be defined in Membership adapter';
+
+      membershipsAdapter.addMembersToRoom(members).subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe(message);
+          done();
+        },
+      );
+    });
+  });
 });
