@@ -59,4 +59,32 @@ export default class MembershipsAdapter extends WebexAdapter {
       new Error('getMembersFromDestination(destinationID, destinationType) must be defined in MembershipsAdapter'),
     );
   }
+
+  /**
+   * Returns an observable that emits the membership with a member added to the room.
+   *
+   * @param {string} personID ID of the person to add to a room
+   * @param {string} roomID ID of the room to add the person into
+   * @returns {external:Observable.<Membership>} Observable stream that emits the membership with the added member
+   * @memberof MembershipAdapter
+   */
+  addRoomMember(personID, roomID) {
+    return throwError(
+      new Error('addRoomMember(personID, roomID) must be defined in MembershipsAdapter'),
+    );
+  }
+
+  /**
+   * Returns an observable that emits the membership with the member removed from the room.
+   *
+   * @param {string} personID ID of the person to remove from a room
+   * @param {string} roomID ID of the room the remove the person from
+   * @returns {external:Observable.<Membership>} Observable stream that emits the membership with the removed member
+   * @memberof MembershipAdapter
+   */
+  removeRoomMember(personID, roomID) {
+    return throwError(
+      new Error('removeRoomMember(personID, roomID) must be defined in MembershipsAdapter'),
+    );
+  }
 }
