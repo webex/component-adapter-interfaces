@@ -32,4 +32,44 @@ describe('Memberships Adapter Interface', () => {
       );
     });
   });
+
+  describe('addRoomMember()', () => {
+    test('returns an observable', () => {
+      const methodUnderTest = membershipsAdapter.addRoomMember();
+
+      expect(isObservable(methodUnderTest)).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      const message = 'addRoomMember(personID, roomID) must be defined in MembershipsAdapter';
+
+      membershipsAdapter.addRoomMember('personID', 'roomID').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe(message);
+          done();
+        },
+      );
+    });
+  });
+
+  describe('removeRoomMember()', () => {
+    test('returns an observable', () => {
+      const methodUnderTest = membershipsAdapter.removeRoomMember();
+
+      expect(isObservable(methodUnderTest)).toBeTruthy();
+    });
+
+    test('errors because it needs to be defined', (done) => {
+      const message = 'removeRoomMember(personID, roomID) must be defined in MembershipsAdapter';
+
+      membershipsAdapter.removeRoomMember('personID', 'roomID').subscribe(
+        () => {},
+        (error) => {
+          expect(error.message).toBe(message);
+          done();
+        },
+      );
+    });
+  });
 });
