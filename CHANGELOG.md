@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/webex/component-adapter-interfaces/compare/v1.26.0...v1.27.0) (2022-03-30)
+
+
+### Features
+
+* **ActivitiesAdapter:** add 'attachments' and 'cards' properties to Activity object ([ea49976](https://github.com/webex/component-adapter-interfaces/commit/ea49976d10a4fce2c24c1a78d5a1b8cdac56d456))
+
 # [1.26.0](https://github.com/webex/component-adapter-interfaces/compare/v1.25.0...v1.26.0) (2022-03-17)
 
 
