@@ -1,3 +1,15 @@
+# [1.28.0](https://github.com/webex/component-adapter-interfaces/compare/v1.27.0...v1.28.0) (2022-03-31)
+
+
+### Bug Fixes
+
+* **MetricsAdapter:** export MetricType and MetricsAdapter ([7caf370](https://github.com/webex/component-adapter-interfaces/commit/7caf3707d8388ce43d97c91d8ac330f827d9a97a))
+
+
+### Features
+
+* **MembershipsAdapter:** add methods addRoomMember and removeRoomMember ([fc35016](https://github.com/webex/component-adapter-interfaces/commit/fc35016a74c1122b8aa8d39d7f180dc9446083ea))
+
 # [1.27.0](https://github.com/webex/component-adapter-interfaces/compare/v1.26.0...v1.27.0) (2022-03-30)
 
 
