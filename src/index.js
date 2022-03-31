@@ -11,3 +11,4 @@ export {default as MembershipsAdapter, DestinationType} from './MembershipsAdapt
 export {default as OrganizationsAdapter} from './OrganizationsAdapter';
 export {default as PeopleAdapter, PersonStatus} from './PeopleAdapter';
 export {default as RoomsAdapter, RoomType} from './RoomsAdapter';
+export {default as MetricsAdapter, MetricType} from './MetricsAdapter';
