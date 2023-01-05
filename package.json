@@ -1,4 +1,5 @@
 {
+  "name": "component-adapter-interfaces",
   "private": true,
   "workspaces": [
     "src/*"
@@ -30,7 +31,7 @@
     "workspace": "^0.0.1-preview.1"
   },
   "packageManager": "yarn@3.3.1",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
     "build": "^0.1.4",
     "check": "^1.0.0",
