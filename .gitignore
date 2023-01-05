@@ -21,6 +21,7 @@ log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.yarn/install-state.gz
 .yarn/cache
 .node_repl_history
 reports/
@@ -45,4 +46,5 @@ reports/
 !.env.default
 !package.json
 !package-lock.json
+!.yarn/plugins
 node_modules/
