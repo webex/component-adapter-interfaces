@@ -46,5 +46,6 @@ reports/
 !.env.default
 !package.json
 !package-lock.json
+!turbo.json
 !.yarn/plugins
 node_modules/
