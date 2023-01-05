@@ -48,5 +48,8 @@ reports/
 !package-lock.json
 !turbo.json
 !tsconfig.json
+!base.json
+!library.json
+!react-library.json
 !.yarn/plugins
 node_modules/
