@@ -1,3 +1,26 @@
+## [1.28.1](https://github.com/webex/component-adapter-interfaces/compare/v1.28.0...v1.28.1) (2023-01-06)
+
+
+### Reverts
+
+* Revert "migrating adapter interfaces from GitHub.com/webex/calling-widgets" ([2004870](https://github.com/webex/component-adapter-interfaces/commit/2004870fd6485e519f5504a486cb3f3bf99293f9))
+* Revert "modified lint" ([2a5a33d](https://github.com/webex/component-adapter-interfaces/commit/2a5a33d2c1e7ccf4a46e6e62604b6fafe47b2707))
+* Revert "removed circleci" ([a86a349](https://github.com/webex/component-adapter-interfaces/commit/a86a3493a0b5aae85c05561c31092d417dfc9f75))
+* Revert "changed newversion event for publish" ([ce26eaf](https://github.com/webex/component-adapter-interfaces/commit/ce26eaf313694cd38419fd97977ef4629a977164))
+* Revert "changed newversion event for publish" ([169795e](https://github.com/webex/component-adapter-interfaces/commit/169795ebcb72bb907bbfb940865583dd977694ef))
+* Revert "changedversion" ([e955f60](https://github.com/webex/component-adapter-interfaces/commit/e955f60a08e0c16335e9832f33e0ff3cc0f1238d))
+* Revert "modifiedworkflowconfig" ([dcb1366](https://github.com/webex/component-adapter-interfaces/commit/dcb1366099f84eaed48b92a6cdde786420b60bf6))
+* Revert "added turbo.json" ([7782174](https://github.com/webex/component-adapter-interfaces/commit/7782174b6c235748a7952e27c95f0d51a6e2c802))
+* Revert "added tsconfig.json" ([dbc3de1](https://github.com/webex/component-adapter-interfaces/commit/dbc3de1c8f12b4b0385dbcf1b28bc9512ef70fda))
+* Revert "added tsconfigwebex.json" ([a4f67f4](https://github.com/webex/component-adapter-interfaces/commit/a4f67f45c1bf2d5ac6309faf6646df61a70eb378))
+* Revert "added semantic release" ([1bd4656](https://github.com/webex/component-adapter-interfaces/commit/1bd4656103e1c88e8a56e79c72ea6f4186f13ab3))
+* Revert "added package name" ([0b04fbd](https://github.com/webex/component-adapter-interfaces/commit/0b04fbd61b86931583d6facdb33b424bfc1174e2))
+* Revert "added eslint config" ([e9d91ac](https://github.com/webex/component-adapter-interfaces/commit/e9d91ac58428b684ed1107eecf95c16cff5aab1f))
+* Revert "added eslint config" ([ab6b64a](https://github.com/webex/component-adapter-interfaces/commit/ab6b64aa9d4b3c80f8641c41191c8e3bedffe7f7))
+* Revert "added yarn changes" ([c28c628](https://github.com/webex/component-adapter-interfaces/commit/c28c628cbf22ab3c733aec676bb155d68f553543))
+* Revert "added yarn publish" ([83b4092](https://github.com/webex/component-adapter-interfaces/commit/83b40926e412e9bf09021bbc57b82914016ee2e4))
+* Revert "added npm publish" ([f440f56](https://github.com/webex/component-adapter-interfaces/commit/f440f56dd0db4095081f27274c97c0299f6d741a))
+
 # [1.28.0](https://github.com/webex/component-adapter-interfaces/compare/v1.27.0...v1.28.0) (2022-03-31)
 
 
