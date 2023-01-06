@@ -17,7 +17,8 @@
   },
   "publishConfig": {
     "tag": "latest",
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
     "build": "rollup -c",
