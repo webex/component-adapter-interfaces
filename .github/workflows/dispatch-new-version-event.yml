@@ -20,7 +20,7 @@ jobs:
       - run: yarn set version berry && yarn install
 
       - run: yarn build
-      - run: npx semantic-release
+      - run: yarn publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
