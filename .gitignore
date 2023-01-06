@@ -43,6 +43,7 @@ reports/
 #Local stuff
 *.json
 .env*
+.rollup.cache
 !.env.default
 !package.json
 !package-lock.json
@@ -51,5 +52,6 @@ reports/
 !base.json
 !library.json
 !react-library.json
+!tsconfig.eslint.json
 !.yarn/plugins
 node_modules/
