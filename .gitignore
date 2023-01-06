@@ -21,7 +21,6 @@ log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.yarn/cache
 .node_repl_history
 reports/
 
