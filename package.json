@@ -4,9 +4,6 @@
   "workspaces": [
     "src/*"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
     "prepare": "husky install",
     "build": "turbo run build",
