@@ -66,7 +66,7 @@ jobs:
     executor: node-executor
     steps:
       - checkout_from_workspace
-       - run:
+      - run:
           name: install
           command: npm i
       - run:
