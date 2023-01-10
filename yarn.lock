@@ -4846,6 +4846,10 @@ __metadata:
   resolution: "component-adapter-interfaces@workspace:."
   dependencies:
     "@changesets/cli": 2.22.0
+    "@rollup/plugin-commonjs": ^22.0.1
+    "@rollup/plugin-node-resolve": ^13.3.0
+    "@rollup/plugin-typescript": ^8.3.3
+    "@types/rollup-plugin-peer-deps-external": ^2
     build: ^0.1.4
     check: ^1.0.0
     eslint: 8.31.0
