@@ -68,7 +68,7 @@ jobs:
       - checkout_from_workspace
       - run:
           name: Release
-          command: yarn npm publish
+          command: npm run release
 
 # execute the jobs in a orderly manner
 workflows:
