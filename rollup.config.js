@@ -6,11 +6,11 @@ import {terser} from 'rollup-plugin-terser';
  * - Project only has RxJS as a peer dependency
  */
 
-const modulePath = 'dist/webex-component-adapter-interfaces';
+const modulePath = 'src/webex/dist/webex-component-adapter-interfaces';
 
 export default [
   {
-    input: 'src/index.js',
+    input: 'src/webex/src/index.js',
     output: [
       {
         file: `${modulePath}.es.js`,
@@ -27,7 +27,7 @@ export default [
     external: [/rxjs/],
   },
   {
-    input: 'src/index.js',
+    input: 'src/webex/src/index.js',
     output: [
       {
         file: `${modulePath}.umd.js`,
