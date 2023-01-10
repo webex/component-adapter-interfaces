@@ -24,6 +24,7 @@
   "devDependencies": {
     "@changesets/cli": "2.22.0",
     "eslint": "8.22.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "husky": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
     "plop": "^3.1.1",

@@ -4813,6 +4813,7 @@ __metadata:
     build: ^0.1.4
     check: ^1.0.0
     eslint: 8.22.0
+    eslint-config-airbnb-base: ^14.2.0
     husky: ^8.0.1
     identity-obj-proxy: ^3.0.0
     jest: ^29.3.1
