@@ -67,11 +67,8 @@ jobs:
     steps:
       - checkout_from_workspace
       - run:
-          name: install
-          command: npm i
-      - run:
           name: Release
-          command: npm run release
+          command: yarn npm publish
 
 # execute the jobs in a orderly manner
 workflows:
