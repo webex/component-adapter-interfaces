@@ -1,0 +1,6 @@
+{
+  "extends": "ts-config-webex-int/base.json",
+  "include": [
+    ".eslintrc.json"
+  ]
+}

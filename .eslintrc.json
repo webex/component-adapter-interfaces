@@ -10,6 +10,7 @@
     "jest",
     "jsdoc"
   ],
+  "ignorePatterns": ["*.ts","**/webexcalling/*.js"],
   "extends": [
     "airbnb-base",
     "plugin:jest/recommended",
