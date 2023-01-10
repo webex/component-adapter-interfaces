@@ -58,3 +58,4 @@ node_modules/
 *.gz
 .yarn/install-state.gz
 .yarn/cache
+!config.json
