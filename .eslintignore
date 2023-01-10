@@ -1,0 +1,8 @@
+**/dist/**/*.js
+**/webex/**/*.js
+**/*.config.js
+**/eslintrc.js
+webpack.*.js
+babel.config.js
+jest.config.js
+rollup.config.js

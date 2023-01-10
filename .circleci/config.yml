@@ -55,13 +55,21 @@ jobs:
           name: Build
           command: npm run build
       - persist_to_workspace:
-          root: .
+          root: ./src/webex
           paths: dist
-
+      - persist_to_workspace:
+          root: ./src/webexcalling
+          paths: dist
   release:
     executor: node-executor
     steps:
       - checkout_from_workspace
+      - run:
+          name: install
+          command: npm i
+      - run:
+          name: install
+          command: npm i
       - run:
           name: Release
           command: npm run release
