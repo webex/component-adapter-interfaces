@@ -21,6 +21,14 @@
     "test:coverage": "jest --coverage",
     "test:eslint": "eslint src/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webex/component-adapter-interfaces.git"
+  },
+  "publishConfig": {
+    "tag": "latest",
+    "access": "public"
+  },
   "devDependencies": {
     "@changesets/cli": "2.22.0",
     "@rollup/plugin-commonjs": "^22.0.1",
