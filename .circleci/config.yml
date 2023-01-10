@@ -43,7 +43,7 @@ jobs:
       - checkout_from_workspace
       - run:
           name: Linting
-          command: yarn run test:eslint
+          command: npm run test:eslint
       - run:
           name: Unit Test Coverage
           command: npm run test:coverage

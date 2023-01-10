@@ -10,9 +10,6 @@
       ]
     },
     "test": {
-      "outputs": [
-        "src/webex/test_results/turbo/**"
-      ],
       "dependsOn": []
     },
     "lint": {
