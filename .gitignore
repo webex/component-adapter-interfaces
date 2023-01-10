@@ -45,3 +45,16 @@ reports/
 !package.json
 !package-lock.json
 node_modules/
+.turbo
+!turbo.json
+!tsconfig.json
+!base.json
+!library.json
+!react-library.json
+!tsconfig.eslint.json
+!.eslintrc.json
+!.yarn/plugins
+.rollup.cache
+*.gz
+.yarn/install-state.gz
+.yarn/cache
