@@ -23,13 +23,16 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dependency-cache-{{ checksum "package-lock.json" }}
+            - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
           name: Install Dependencies
-          command: npm i
+          command: yarn install
       - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-          paths: node_modules
+          name: "Save Yarn Package Cache"
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - .yarn/cache
+            - .yarn/unplugged
       - persist_to_workspace:
           root: .
           paths: node_modules
@@ -53,10 +56,11 @@ jobs:
       - checkout_from_workspace
       - run:
           name: Build
-          command: npm run build
+          command: yarn build
       - persist_to_workspace:
-          root: .
-          paths: dist
+          root: ~/
+          paths: 
+            - "component-adapter-interfaces"
 
   release:
     executor: node-executor
@@ -64,7 +68,7 @@ jobs:
       - checkout_from_workspace
       - run:
           name: Release
-          command: npm run release
+         command: npm run release
 
 # execute the jobs in a orderly manner
 workflows:
