@@ -2,10 +2,10 @@
   "name": "@webex-calling/component-adapter-interfaces",
   "private": true,
   "version": "1.0.0",
-  "source": "src/index.ts",
-  "main": "./dist/cjs/webex-calling-component-adapter-interfaces.js",
-  "module": "./dist/esm/webex-calling-component-adapter-interfaces.js",
-  "types": "./dist/index.d.ts",
+  "source": "src/webexcalling/src/index.ts",
+  "main": "src/webexcalling/dist/cjs/webex-calling-component-adapter-interfaces.js",
+  "module": "src/webexcalling/dist/esm/webex-calling-component-adapter-interfaces.js",
+  "types": "src/webexcalling/dist/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
   "repository": {
@@ -29,7 +29,7 @@
     "dev": "rollup -c -w",
     "lint": "TIMING=1 eslint 'src/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "TIMING=1 eslint 'src/**/*.{ts,tsx,js,jsx}' --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "clean": "rm -rf node_modules && rm -rf dist",
     "clean:dist": "rm -rf dist",
     "test": "",
     "test:coverage": ""
