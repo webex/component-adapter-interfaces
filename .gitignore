@@ -45,8 +45,6 @@ reports/
 !package.json
 !package-lock.json
 node_modules/
-.turbo
-!turbo.json
 !tsconfig.json
 !base.json
 !library.json

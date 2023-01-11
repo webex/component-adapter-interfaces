@@ -6,7 +6,7 @@ import del from 'rollup-plugin-delete';
 import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 
-const packageJson = require('./package.json');
+const packageJson = require('./src/webexcalling/package.json');
 const moduleName = packageJson.name.replace('@', '').replace('/', '-');
 
 export default [
@@ -43,20 +43,21 @@ export default [
     ],
     external: [/rxjs/],
     plugins: [
-      del({ targets: 'dist/*' }),
+      del({ targets: 'src/webexcalling/dist/*' }),
       external(),
       resolve(),
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.json',
+        tsconfig: './src/webexcalling/tsconfig.json',
         declarationDir: '.',
         outputToFilesystem: true,
       }),
     ],
   },
   {
-    input: 'dist/esm/src/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+    input: 'src/webexcalling/dist/esm/src/index.d.ts',
+    output: [{ file: 'src/webexcalling/dist/index.d.ts', format: 'esm' }],
+
     external: [/\.css$/, /\.scss$/],
     plugins: [dts()],
   },
