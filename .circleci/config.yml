@@ -60,6 +60,7 @@ jobs:
       - persist_to_workspace:
           root: ./src/webexcalling
           paths: dist
+          
   release:
     executor: node-executor
     steps:

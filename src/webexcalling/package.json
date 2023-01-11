@@ -1,7 +1,8 @@
 {
   "name": "@webex-calling/component-adapter-interfaces",
-  "private": true,
   "version": "1.0.0",
+  "description": "Adapter interfaces for Webex Calling",
+  "author": "devsupport@webex.com",
   "source": "src/webexcalling/src/index.ts",
   "main": "src/webexcalling/dist/cjs/webex-calling-component-adapter-interfaces.js",
   "module": "src/webexcalling/dist/esm/webex-calling-component-adapter-interfaces.js",

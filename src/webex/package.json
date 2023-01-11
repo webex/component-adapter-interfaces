@@ -1,26 +1,6 @@
 {
   "name": "@webex/component-adapter-interfaces",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   "version": "1.28.1",
-=======
-  "version": "1.28.2",
->>>>>>> 0a59b88 (migration of calling adapterinterfaces from callingwidget repo)
-=======
-  "version": "1.28.1",
->>>>>>> a5e1bcd (package version)
-=======
-  "version": "1.28.2",
->>>>>>> 877af67 (changed version)
-=======
-  "version": "1.28.1",
->>>>>>> f6f0ddf (package version reverted)
-=======
-  "version": "1.28.1",
->>>>>>> f7f1b871a27054540be32d8d1114c7e5e3bd243f
   "description": "Adapter interfaces for Webex Components (https://github.com/webex/components)",
   "author": "devsupport@webex.com",
   "license": "MIT",
