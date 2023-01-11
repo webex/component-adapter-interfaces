@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "2.22.0",
+    "@babel/preset-env": "^7.10.4",
     "@rollup/plugin-commonjs": "^22.0.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.3",
