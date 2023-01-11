@@ -1,3 +1,11 @@
+# [1.29.0](https://github.com/webex/component-adapter-interfaces/compare/v1.28.1...v1.29.0) (2023-01-11)
+
+
+### Features
+
+* **callingmigration:** adapter interfaces added from callingwidgets ([13e7782](https://github.com/webex/component-adapter-interfaces/commit/13e7782a9077f613eecd426fc33b460fc23617af))
+* **callingmigration:** added calling adapter interfaces ([18c7cf0](https://github.com/webex/component-adapter-interfaces/commit/18c7cf0c6d3e379220f7301af1282a5f3882f6ba))
+
 ## [1.28.1](https://github.com/webex/component-adapter-interfaces/compare/v1.28.0...v1.28.1) (2023-01-06)
 
 
