@@ -51,7 +51,6 @@ node_modules/
 !react-library.json
 !tsconfig.eslint.json
 !.eslintrc.json
-!.yarn/plugins
 .rollup.cache
 *.gz
-.yarn/install-state.gz
+!config.json
