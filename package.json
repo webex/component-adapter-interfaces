@@ -110,10 +110,6 @@
             {
               "path": "dist/esm/webex-calling-component-adapter-interfaces.min.js",
               "label": "Webex calling ECMAScript (ESM) minified bundle"
-            },
-            {
-              "path": "dist/cjs/webex-calling-component-adapter-interfaces.min.js",
-              "label": "Webex calling CommonJs (CJS) minified bundle"
             }
           ]
         }
