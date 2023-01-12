@@ -6,7 +6,7 @@ import {terser} from 'rollup-plugin-terser';
  * - Project only has RxJS as a peer dependency
  */
 
-const modulePath = 'src/webex/dist/webex-component-adapter-interfaces';
+const modulePath = 'dist/webex-component-adapter-interfaces';
 
 export default [
   {

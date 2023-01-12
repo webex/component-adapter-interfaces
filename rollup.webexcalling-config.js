@@ -2,7 +2,6 @@ import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import external from 'rollup-plugin-peer-deps-external';
-import del from 'rollup-plugin-delete';
 import dts from 'rollup-plugin-dts';
 import { terser } from 'rollup-plugin-terser';
 
@@ -43,7 +42,6 @@ export default [
     ],
     external: [/rxjs/],
     plugins: [
-      del({ targets: 'src/webexcalling/dist/*' }),
       external(),
       resolve(),
       commonjs(),
@@ -55,8 +53,8 @@ export default [
     ],
   },
   {
-    input: 'src/webexcalling/dist/esm/src/index.d.ts',
-    output: [{ file: 'src/webexcalling/dist/index.d.ts', format: 'esm' }],
+    input: 'dist/esm/src/index.d.ts',
+    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
 
     external: [/\.css$/, /\.scss$/],
     plugins: [dts()],

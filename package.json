@@ -1,9 +1,9 @@
 {
   "name": "component-adapter-interfaces",
   "version": "1.29.0",
-  "workspaces": [
-    "src/*"
-  ],
+  "description": "Adapter interfaces for Webex Components (https://github.com/webex/components)",
+  "author": "devsupport@webex.com",
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c ./rollup.config.js && rollup -c ./rollup.webexcalling-config.js",
     "prettier": "prettier --check \"src/**/*.*(js)\"",
@@ -24,6 +24,9 @@
     "tag": "latest",
     "access": "public"
   },
+  "files": [
+    "dist/**"
+  ],
   "devDependencies": {
     "@changesets/cli": "2.22.0",
     "@babel/preset-env": "^7.10.4",
@@ -78,6 +81,13 @@
       ]
     }
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:eslint",
+      "pre-push": "npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
@@ -90,19 +100,19 @@
         {
           "assets": [
             {
-              "path": "src/webex/dist/webex-component-adapter-interfaces.es.min.js",
+              "path": "dist/webex-component-adapter-interfaces.es.min.js",
               "label": "Webex ECMAScript (ESM) minified bundle"
             },
             {
-              "path": "src/webex/dist/webex-component-adapter-interfaces.umd.min.js",
+              "path": "dist/webex-component-adapter-interfaces.umd.min.js",
               "label": "Webex Universal Module Definition (UMD) minified bundle"
             },
             {
-              "path": "src/webexcalling/dist/esm/webex-calling-component-adapter-interfaces.min.js",
+              "path": "dist/esm/webex-calling-component-adapter-interfaces.min.js",
               "label": "Webex calling ECMAScript (ESM) minified bundle"
             },
             {
-              "path": "src/webexcalling/dist/cjs/webex-calling-component-adapter-interfaces.min.js",
+              "path": "dist/cjs/webex-calling-component-adapter-interfaces.min.js",
               "label": "Webex calling CommonJs (CJS) minified bundle"
             }
           ]
