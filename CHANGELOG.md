@@ -1,3 +1,10 @@
+## [1.29.3](https://github.com/webex/component-adapter-interfaces/compare/v1.29.2...v1.29.3) (2023-01-12)
+
+
+### Bug Fixes
+
+* voicemail adapter fix, calling adapter migration from calling widgets ([9a53b04](https://github.com/webex/component-adapter-interfaces/commit/9a53b042c0e510f3bacdec1f038f31a3b9efe0f7))
+
 ## [1.29.2](https://github.com/webex/component-adapter-interfaces/compare/v1.29.1...v1.29.2) (2023-01-12)
 
 
