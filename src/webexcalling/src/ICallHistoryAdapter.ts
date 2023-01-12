@@ -75,3 +75,80 @@ export interface ICallHistoryAdapter {
 
   getOne?(ID?: string): Observable<ICallHistoryRecord>;
 }
+
+export enum SORT {
+  ASC = 'ASC',
+  DESC = 'DESC',
+  DEFAULT = 'DESC',
+}
+
+export enum SORT_BY {
+  END_TIME = 'endTime',
+  DEFAULT = 'endTime',
+  START_TIME = 'startTime',
+}
+
+export enum DATE {
+  WEEK = 7,
+  MONTH = 30,
+  DEFAULT = 7,
+}
+
+export enum LIMIT {
+  DEFAULT = 20,
+}
+
+export interface ICallbackInfo {
+  callbackAddress: string;
+  callbackType: string;
+}
+
+export interface ISelf {
+  id: string;
+  name: string;
+  incomingCallProtocols: any[];
+  callbackInfo: ICallbackInfo;
+}
+
+export interface IOther {
+  id: string;
+  name: string;
+  isPrivate: boolean;
+  callbackAddress: string;
+}
+
+export interface ILinks {
+  locusUrl: string;
+  callbackAddress: string;
+}
+
+export interface IUserSession {
+  id: string;
+  durationSecs: number;
+  self: ISelf;
+  url: string;
+  sessionId: string;
+  sessionType: string;
+  startTime: string;
+  endTime: string;
+  direction: string;
+  disposition: string;
+  other: IOther;
+  durationSeconds: number;
+  joinedDurationSeconds: number;
+  participantCount: number;
+  links: ILinks;
+  isDeleted: boolean;
+  isPMR: boolean;
+  correlationIds: string[];
+}
+
+export interface IUserSessionData {
+  userSessions: IUserSession[];
+}
+
+export interface IWebexCallHistoryResponse {
+  statusCode: number;
+  data: IUserSessionData;
+  message: string;
+}
