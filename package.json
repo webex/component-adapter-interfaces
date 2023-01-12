@@ -1,6 +1,6 @@
 {
   "name": "component-adapter-interfaces",
-  "version": "1.29.1",
+  "version": "1.29.2",
   "description": "Adapter interfaces for Webex Components (https://github.com/webex/components)",
   "author": "devsupport@webex.com",
   "license": "MIT",

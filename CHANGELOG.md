@@ -1,3 +1,10 @@
+## [1.29.2](https://github.com/webex/component-adapter-interfaces/compare/v1.29.1...v1.29.2) (2023-01-12)
+
+
+### Bug Fixes
+
+* package for release ([17fcb29](https://github.com/webex/component-adapter-interfaces/commit/17fcb294b48aecf701a5dc9f4943c7c42ed3d710))
+
 ## [1.29.1](https://github.com/webex/component-adapter-interfaces/compare/v1.29.0...v1.29.1) (2023-01-12)
 
 
