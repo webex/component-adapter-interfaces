@@ -1,3 +1,17 @@
+## [1.29.1](https://github.com/webex/component-adapter-interfaces/compare/v1.29.0...v1.29.1) (2023-01-12)
+
+
+### Bug Fixes
+
+* callhistory adapter fix changes ([ab1ca2e](https://github.com/webex/component-adapter-interfaces/commit/ab1ca2edd7d4ec968045ea9a91940db4cad99131))
+
+
+### Reverts
+
+* **callhistory:** reverting for release ([ee0bdb5](https://github.com/webex/component-adapter-interfaces/commit/ee0bdb5e1eb5b00bb359bab9a14c372c8ea629a5))
+* **callhistory:** reverting for release ([e19a92b](https://github.com/webex/component-adapter-interfaces/commit/e19a92b41cb1de77b547b1f5f7982d9e93734fd0))
+* **circleci:** reverting back circleci and dep code ([a6b2fe6](https://github.com/webex/component-adapter-interfaces/commit/a6b2fe6eaddded31d818718d94e6441602986375))
+
 # [1.29.0](https://github.com/webex/component-adapter-interfaces/compare/v1.28.1...v1.29.0) (2023-01-11)
 
 
