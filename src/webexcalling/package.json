@@ -4,9 +4,9 @@
   "description": "Adapter interfaces for Webex Calling",
   "author": "devsupport@webex.com",
   "source": "src/webexcalling/src/index.ts",
-  "main": "src/webexcalling/dist/cjs/webex-calling-component-adapter-interfaces.js",
-  "module": "src/webexcalling/dist/esm/webex-calling-component-adapter-interfaces.js",
-  "types": "src/webexcalling/dist/index.d.ts",
+  "main": "dist/cjs/webex-calling-component-adapter-interfaces.js",
+  "module": "dist/esm/webex-calling-component-adapter-interfaces.js",
+  "types": "dist/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
   "repository": {

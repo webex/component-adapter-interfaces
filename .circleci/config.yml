@@ -55,10 +55,7 @@ jobs:
           name: Build
           command: npm run build
       - persist_to_workspace:
-          root: ./src/webex
-          paths: dist
-      - persist_to_workspace:
-          root: ./src/webexcalling
+          root: .
           paths: dist
           
   release:
