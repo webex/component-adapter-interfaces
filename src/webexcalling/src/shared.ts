@@ -6,12 +6,10 @@ export interface IWebexIntContact {
   fetchAvatarUrl?: () => Promise<string | undefined>;
   displayName?: string
 }
-
 export interface IWebexIntCallableEntity {
   type: string;
   address: string;
 }
-
 export interface IUserAvatar {
   fetchAvatar: () => string;
 }

@@ -67,7 +67,6 @@ export interface ICallHistoryRecord {
   callbackAddress?: string;
   isSelected?: boolean;
 }
-
 export interface ICallHistoryAdapter {
   refresh(ID?: string): void;
 
@@ -147,7 +146,6 @@ export interface IUserSession {
 export interface IUserSessionData {
   userSessions: IUserSession[];
 }
-
 export interface IWebexCallHistoryResponse {
   statusCode: number;
   data: IUserSessionData;
