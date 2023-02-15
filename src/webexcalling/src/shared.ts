@@ -4,6 +4,7 @@ export interface IWebexIntContact {
   phoneNumbers: IWebexIntCallableEntity[];
   emailAddresses: IWebexIntCallableEntity[];
   fetchAvatarUrl?: () => Promise<string | undefined>;
+  displayName?: string
 }
 
 export interface IWebexIntCallableEntity {

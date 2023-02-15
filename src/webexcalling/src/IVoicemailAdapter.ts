@@ -6,18 +6,30 @@ export interface IWebexVoicemail {
   address: string;
   unread: boolean;
   date: string;
-  audioSrc: string;
   duration: number;
 }
 
 export enum RESPONSE_STATUS {
-  STATUSCODE = 200,
+  STATUSCODE_200 = 200,
   SUCCESS = 'SUCCESS',
+}
+
+export enum VM_STORAGE_KEYS {
+  VOICEMAIL_DATA_MAP = 'voicemailDataMap',
+  VOICEMAIL_ID_MAP = 'voicemailIdMap'
 }
 
 export enum VOICEMAIL_LIMIT {
   OFFSET = 0,
   OFFSET_LIMIT = 25,
+}
+export enum IDB_STORAGE {
+  DB_NAME = 'VoiceMessageDB',
+  STORE_NAME = 'voiceMessageStore',
+  MAX_ITEMS = 5,
+  READ_WRITE = 'readwrite',
+  IDB_EXIST = 'indexedDB',
+  DB_VERSION = 1
 }
 export interface IDuration {
   $: string;
@@ -67,11 +79,36 @@ export interface IVoiceMailResponse {
   message: string;
 }
 
-export interface IVoiceMailDeleteData {}
+export interface IVoiceMailDeleteData { }
 
 export interface IVoiceMailDeleteResponse {
   statusCode: number;
   data: IVoiceMailDeleteData;
+  message: string;
+}
+
+export interface IVoiceMessageContent {
+  type: string;
+  content: string;
+}
+
+export interface IVoiceMessageContentData {
+  voicemailContent: IVoiceMessageContent;
+}
+
+export interface IVoiceMessageContentResponse {
+  statusCode: number;
+  data: IVoiceMessageContentData;
+  message: string;
+  voiceMessageId?: string;
+  createdAt?: string;
+}
+
+export interface IVoiceMailReadData { }
+
+export interface IVoiceMailReadResponse {
+  statusCode: number;
+  data: IVoiceMailReadData;
   message: string;
 }
 
@@ -80,7 +117,9 @@ export interface IVoicemailAdapter {
 
   getAll(): Observable<IWebexVoicemail[]>;
 
-  deleteVoicemail(ID: string): void;
+  deleteVoicemail(ID: string): Observable<IVoiceMailDeleteResponse>;
 
-  markVoicemailRead(ID: string): void;
+  markVoicemailRead(ID: string): Observable<IVoiceMailReadResponse>;
+
+  getVoiceMessage(ID: string): Observable<IVoiceMessageContentResponse>;
 }
