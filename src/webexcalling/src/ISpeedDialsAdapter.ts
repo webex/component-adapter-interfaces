@@ -31,6 +31,12 @@ export interface ISpeedDialRecord {
   surname?: string;
   givenName?: string;
   photo?: string;
+  name?: string;
+  phoneNumbers?: any
+  emailAddresses?: any,
+  address?: string;
+  defaultKey?: string
+  selectedIndex?: any
 }
 
 export interface ISpeedDialsAdapter {
@@ -42,9 +48,11 @@ export interface ISpeedDialsAdapter {
 
   getContacts?(query?: string): Observable<ISpeedDialRecord[]>;
 
-  add?(speedDial: ISpeedDialRecord): void;
+  add(speedDial: ISpeedDialRecord): void;
 
-  update?(speedDial: ISpeedDialRecord): void;
+  update(speedDial: ISpeedDialRecord): void;
 
-  remove?(speedDial: ISpeedDialRecord): void;
+  remove(speedDial: ISpeedDialRecord): void;
+  
+  reOrder(speedDial: ISpeedDialRecord): void;
 }

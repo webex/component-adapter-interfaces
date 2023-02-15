@@ -111,6 +111,7 @@ export interface ISelf {
 }
 
 export interface IOther {
+  phoneNumber: string;
   id: string;
   name: string;
   isPrivate: boolean;
