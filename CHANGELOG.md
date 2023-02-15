@@ -1,3 +1,10 @@
+## [1.29.4](https://github.com/webex/component-adapter-interfaces/compare/v1.29.3...v1.29.4) (2023-02-15)
+
+
+### Bug Fixes
+
+* **calling:** changes to release to npm ([45010f8](https://github.com/webex/component-adapter-interfaces/commit/45010f8929aad0e14e2338bed970eec480803f97))
+
 ## [1.29.3](https://github.com/webex/component-adapter-interfaces/compare/v1.29.2...v1.29.3) (2023-01-12)
 
 
