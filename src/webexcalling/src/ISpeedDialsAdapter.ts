@@ -38,7 +38,6 @@ export interface ISpeedDialRecord {
   defaultKey?: string
   selectedIndex?: any
 }
-
 export interface ISpeedDialsAdapter {
   refresh?(ID?: string): void;
 

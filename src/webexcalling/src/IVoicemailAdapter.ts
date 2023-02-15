@@ -46,7 +46,6 @@ export interface IUserId {
 export interface IAddress {
   $: string;
 }
-
 export interface ICallingPartyInfo {
   name: IName;
   userId: IUserId;
@@ -91,11 +90,9 @@ export interface IVoiceMessageContent {
   type: string;
   content: string;
 }
-
 export interface IVoiceMessageContentData {
   voicemailContent: IVoiceMessageContent;
 }
-
 export interface IVoiceMessageContentResponse {
   statusCode: number;
   data: IVoiceMessageContentData;
@@ -105,13 +102,11 @@ export interface IVoiceMessageContentResponse {
 }
 
 export interface IVoiceMailReadData { }
-
 export interface IVoiceMailReadResponse {
   statusCode: number;
   data: IVoiceMailReadData;
   message: string;
 }
-
 export interface IVoicemailAdapter {
   refresh(): void;
 
