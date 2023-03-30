@@ -12,9 +12,10 @@ export interface ISearchContactsAdapterSearchResponse {
 }
 
 export interface ISearchContactsAdapter {
-  search: (
-    _: ISearchContactsAdapterSearchInput
-  ) => Promise<ISearchContactsAdapterSearchResponse>;
+    search: (
+        _: ISearchContactsAdapterSearchInput
+    ) => Promise<ISearchContactsAdapterSearchResponse>;
 
-  getSources: () => string[];
+    getSources: () => string[];
+    getContactById(userId: string): Promise<IWebexIntContact | void>;
 }
