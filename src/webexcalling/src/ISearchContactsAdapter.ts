@@ -17,5 +17,5 @@ export interface ISearchContactsAdapter {
     ) => Promise<ISearchContactsAdapterSearchResponse>;
 
     getSources: () => string[];
-    getContactById(userId: string): Promise<IWebexIntContact | void>;
+    getContactById?(userId: string): Promise<IWebexIntContact | void>;
 }
