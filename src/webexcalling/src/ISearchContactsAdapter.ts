@@ -17,6 +17,6 @@ export interface ISearchContactsAdapter {
     ) => Promise<ISearchContactsAdapterSearchResponse>;
 
     getSources: () => string[];
-    //Optional Method to get contacts
+    //Optional Method to get Outlook & Dir contacts
     getContactDetailById?(userId: string): Promise<IWebexIntContact | void>;
 }
