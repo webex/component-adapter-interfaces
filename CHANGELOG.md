@@ -1,3 +1,13 @@
+# [1.30.0](https://github.com/webex/component-adapter-interfaces/compare/v1.29.4...v1.30.0) (2023-04-03)
+
+
+### Features
+
+* **callhistory:** Added contact search interfaces method ([fa7d381](https://github.com/webex/component-adapter-interfaces/commit/fa7d381ebc8ca61ad51e174c6c429f923fb8ab28))
+* **callhistory:** Added git publish to npm ([22c46ee](https://github.com/webex/component-adapter-interfaces/commit/22c46ee9f866d8cad74edcbd5e0bf9398852355a))
+* **callhistory:** Added git publish to npm -added test n remove circleCI ([22d88b6](https://github.com/webex/component-adapter-interfaces/commit/22d88b6f007fe8990e8eefdb4dd974465e6b88d3))
+* **callhistory:** Added git publish to npm -added test n remove circleCI 1 ([be0105b](https://github.com/webex/component-adapter-interfaces/commit/be0105be5ed532b8da4e9370e6e74e9c003e0440))
+
 ## [1.29.4](https://github.com/webex/component-adapter-interfaces/compare/v1.29.3...v1.29.4) (2023-02-15)
 
 
