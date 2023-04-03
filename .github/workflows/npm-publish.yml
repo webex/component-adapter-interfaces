@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
+      - run: yarn install
       - run: npm run test:eslint
       - run: npm run test:coverage
-      - run: npm run build
+      - run: yarn build
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
