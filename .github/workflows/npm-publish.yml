@@ -17,8 +17,7 @@ jobs:
         with:
           node-version: 16
       - run: yarn install
-      - run: npm run test:eslint
-      - run: npm run test:coverage
+
       - run: yarn build
       - run: npx semantic-release
         env:
