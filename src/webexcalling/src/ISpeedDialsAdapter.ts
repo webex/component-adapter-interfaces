@@ -4,6 +4,9 @@ export interface ISpeedDialRecord {
   /** The id for reference */
   id: string;
 
+  /** The contactId for reference */
+  contactId?: string;
+
   /** The display name */
   displayName: string;
 
