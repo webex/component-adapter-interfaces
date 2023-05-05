@@ -1,3 +1,10 @@
+## [1.30.2](https://github.com/webex/component-adapter-interfaces/compare/v1.30.1...v1.30.2) (2023-05-05)
+
+
+### Bug Fixes
+
+* **contactId:** added contactId ([054fa36](https://github.com/webex/component-adapter-interfaces/commit/054fa3639aa5f722da2704356db8c770d5ed7a98))
+
 ## [1.30.1](https://github.com/webex/component-adapter-interfaces/compare/v1.30.0...v1.30.1) (2023-04-28)
 
 
