@@ -52,7 +52,7 @@ export interface ISpeedDialsAdapter {
 
   add(speedDial: ISpeedDialRecord): void;
 
-  update(speedDial: ISpeedDialRecord): void;
+  update(speedDialList: ISpeedDialRecord[]): void;
 
   remove(speedDial: ISpeedDialRecord): void;
   
