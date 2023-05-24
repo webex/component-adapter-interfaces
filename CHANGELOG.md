@@ -1,3 +1,10 @@
+## [1.30.3](https://github.com/webex/component-adapter-interfaces/compare/v1.30.2...v1.30.3) (2023-05-24)
+
+
+### Bug Fixes
+
+* **sdUpdateParam:** changed parameter ([df83c35](https://github.com/webex/component-adapter-interfaces/commit/df83c35d4537e0b6a9ec89d78b5c124a0311b8bb))
+
 ## [1.30.2](https://github.com/webex/component-adapter-interfaces/compare/v1.30.1...v1.30.2) (2023-05-05)
 
 
