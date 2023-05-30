@@ -6,3 +6,4 @@ export * from './IMakeCallAdapter';
 export * from './ISpeedDialsAdapter';
 export * from './IVoicemailAdapter';
 export * from './IMetricsAdapter';
+export * from './ICallForwardAdapter';
