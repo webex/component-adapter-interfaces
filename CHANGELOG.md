@@ -1,3 +1,10 @@
+## [1.30.5](https://github.com/webex/component-adapter-interfaces/compare/v1.30.4...v1.30.5) (2023-05-31)
+
+
+### Bug Fixes
+
+* **callForward:** callForward Types ([8f0ad62](https://github.com/webex/component-adapter-interfaces/commit/8f0ad62c2b1746a9192060a01db1f3954b02f1e2))
+
 ## [1.30.4](https://github.com/webex/component-adapter-interfaces/compare/v1.30.3...v1.30.4) (2023-05-31)
 
 
