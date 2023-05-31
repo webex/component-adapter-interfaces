@@ -5,32 +5,32 @@ export interface IToggleSetting {
     ringSplashEnabled?: boolean;
 };
 
-export interface Ialways {
+export interface IAlways {
     enabled: boolean;
     ringReminderEnabled?: boolean;
     destinationVoicemailEnabled?: boolean;
     destination?: string;
 }
 
-export interface Ibusy {
+export interface IBusy {
     enabled: boolean;
     destinationVoicemailEnabled?: boolean;
     destination?: string;
 }
 
-export interface InoAnswer {
+export interface INoAnswer {
     enabled: boolean;
     destinationVoicemailEnabled?: boolean;
     destination?: string;
 }
-export interface IcallForwardDetails {
-    always?: Ialways;
-    busy?: Ibusy;
-    noAnswer?: InoAnswer;
+export interface ICallForwardDetails {
+    always?: IAlways;
+    busy?: IBusy;
+    noAnswer?: INoAnswer;
 }
 
 export interface ICallForwardSetting {
-    callForwarding?: IcallForwardDetails;
+    callForwarding?: ICallForwardDetails;
     businessContinuity?: {
         enabled: boolean;
         destinationVoicemailEnabled?: boolean;
@@ -92,5 +92,5 @@ export interface ICallSettingResponse {
 };
 
 export interface ICallSettingsAdapter {
-    getCallForwardSettings(): Observable<ICallForwardSetting>;
+    getCallForwardSettings(): Observable<IAlways>;
 }
