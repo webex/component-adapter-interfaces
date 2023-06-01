@@ -1,3 +1,10 @@
+## [1.30.6](https://github.com/webex/component-adapter-interfaces/compare/v1.30.5...v1.30.6) (2023-06-01)
+
+
+### Bug Fixes
+
+* **voicemailSettings:** Voicemeil Settings ([178b3c7](https://github.com/webex/component-adapter-interfaces/commit/178b3c7cbdcc3c553fe7e6e42e207f6123477e0a))
+
 ## [1.30.5](https://github.com/webex/component-adapter-interfaces/compare/v1.30.4...v1.30.5) (2023-05-31)
 
 
