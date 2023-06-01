@@ -37,6 +37,15 @@ export interface ICallForwardSetting {
         destination?: string;
     };
 };
+export interface ICallSettingsData {
+    callSetting?: ICallForwardSetting;
+    error?: string;
+}
+export interface ICallForwardSettingResponse {
+    statusCode?: number;
+    data?: ICallSettingsData;
+    message?: string;
+}
 
 export interface IVoicemailSetting {
     enabled: boolean;
@@ -78,19 +87,19 @@ export interface IVoicemailSetting {
         extension?: string;
     };
     voiceMessageForwardingEnabled?: boolean;
-};
-
-export interface ICallSettingsData {
-    callSetting?: ICallForwardSetting;
+}
+export interface IVoicemailSettingsData {
+    callSetting?: IVoicemailSetting;
     error?: string;
 }
-
-export interface ICallSettingResponse {
+export interface IVoicemailSettingsResponse {
     statusCode?: number;
-    data?: ICallSettingsData;
+    data?: IVoicemailSettingsData;
     message?: string;
-};
+}
 
 export interface ICallSettingsAdapter {
     getCallForwardSettings(): Observable<IAlways>;
+    getVoicemailSetting():Observable<IVoicemailSettingsResponse>;
 }
+//# sourceMappingURL=ICallForwardAdapter.d.ts.map
