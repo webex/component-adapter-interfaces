@@ -100,6 +100,6 @@ export interface IVoicemailSettingsResponse {
 
 export interface ICallSettingsAdapter {
     getCallForwardSettings(): Observable<IAlways>;
-    getVoicemailSetting():Observable<IVoicemailSettingsResponse>;
+    getVoicemailSetting():Observable<IVoicemailSetting>;
 }
 //# sourceMappingURL=ICallForwardAdapter.d.ts.map
