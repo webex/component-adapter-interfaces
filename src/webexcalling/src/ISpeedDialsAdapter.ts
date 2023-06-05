@@ -35,11 +35,12 @@ export interface ISpeedDialRecord {
   givenName?: string;
   photo?: string;
   name?: string;
-  phoneNumbers?: any
-  emailAddresses?: any,
+  phoneNumbers?: any;
+  emailAddresses?: any;
   address?: string;
-  defaultKey?: string
-  selectedIndex?: any
+  defaultKey?: string;
+  selectedIndex?: any;
+  isOutlookDeleted?: boolean;
 }
 export interface ISpeedDialsAdapter {
   refresh?(ID?: string): void;
