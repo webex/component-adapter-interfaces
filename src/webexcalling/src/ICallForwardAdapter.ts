@@ -99,6 +99,8 @@ export interface IVoicemailSettingsResponse {
 }
 
 export interface ICallSettingsAdapter {
+    refreshCallForward(): void;
+    refresVoicemail(): void;
     getCallForwardSettings(): Observable<IAlways>;
     getVoicemailSetting():Observable<IVoicemailSetting>;
 }
