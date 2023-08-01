@@ -41,6 +41,7 @@ export interface ISpeedDialRecord {
   defaultKey?: string;
   selectedIndex?: any;
   isOutlookDeleted?: boolean;
+  sip?: any;
 }
 export interface ISpeedDialsAdapter {
   refresh?(ID?: string): void;
