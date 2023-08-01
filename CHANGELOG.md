@@ -1,3 +1,10 @@
+## [1.30.10](https://github.com/webex/component-adapter-interfaces/compare/v1.30.9...v1.30.10) (2023-08-01)
+
+
+### Bug Fixes
+
+* **addedSpeedDialType:** added speedDail type ([c927d51](https://github.com/webex/component-adapter-interfaces/commit/c927d510d030313c112155a8b0e62bf522e65855))
+
 ## [1.30.9](https://github.com/webex/component-adapter-interfaces/compare/v1.30.8...v1.30.9) (2023-06-21)
 
 
