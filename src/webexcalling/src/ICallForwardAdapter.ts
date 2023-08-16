@@ -98,10 +98,23 @@ export interface IVoicemailSettingsResponse {
     message?: string;
 }
 
+export interface ICallForwardSettingValueResponse {
+    statusCode?: number;
+    data?: {
+        callSetting: CallForwardAlwaysSetting;
+    };
+    message?: string;
+}
+
+export type CallForwardAlwaysSetting = {
+    enabled: boolean;
+    ringReminderEnabled?: boolean;
+    destinationVoicemailEnabled?: boolean;
+    destination?: string;
+  };
+
 export interface ICallSettingsAdapter {
     refreshCallForward(): void;
-    refresVoicemail(): void;
-    getCallForwardSettings(): Observable<IAlways>;
-    getVoicemailSetting():Observable<IVoicemailSetting>;
+    getCallForwardSettings(): Observable<string>;
 }
 //# sourceMappingURL=ICallForwardAdapter.d.ts.map
