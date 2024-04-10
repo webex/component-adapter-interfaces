@@ -7,3 +7,4 @@ export * from './ISpeedDialsAdapter';
 export * from './IVoicemailAdapter';
 export * from './IMetricsAdapter';
 export * from './ICallForwardAdapter';
+export * from './Logger';
