@@ -1,3 +1,10 @@
+## [1.30.12](https://github.com/webex/component-adapter-interfaces/compare/v1.30.11...v1.30.12) (2024-04-10)
+
+
+### Bug Fixes
+
+* **DownloadLogs:** Implemented Download Logs Feature ([e78638d](https://github.com/webex/component-adapter-interfaces/commit/e78638d7c049e0feb67b8aa531d9dc6c26f7df95))
+
 ## [1.30.11](https://github.com/webex/component-adapter-interfaces/compare/v1.30.10...v1.30.11) (2023-08-16)
 
 
