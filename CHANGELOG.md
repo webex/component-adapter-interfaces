@@ -1,3 +1,10 @@
+## [1.30.13](https://github.com/webex/component-adapter-interfaces/compare/v1.30.12...v1.30.13) (2024-05-03)
+
+
+### Bug Fixes
+
+* **call-history:** added CH badge counter type ([b571b48](https://github.com/webex/component-adapter-interfaces/commit/b571b48e378805ea3041e35e5bc6d4e0f954a387))
+
 ## [1.30.12](https://github.com/webex/component-adapter-interfaces/compare/v1.30.11...v1.30.12) (2024-04-10)
 
 
