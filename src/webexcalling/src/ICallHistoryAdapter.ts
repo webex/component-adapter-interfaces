@@ -13,6 +13,26 @@ export enum DirectionTypes {
 
 export type SessionTypes = 'SPARK' | 'BROADWORKS';
 
+export enum CH_STORAGE_KEYS {
+  CH_ERROR_LIST_MSG = 'chListErrorMsg',
+}
+
+export enum SESSION_TYPES {
+  CMR = 'CMR',
+  SPARK = 'SPARK',
+  SPACEMEETING = 'SPACEMEETING',
+  EVENTCENTERMEETING = 'EVENTCENTERMEETING'
+}
+
+export enum CALLING_SPECIFIC_REASON {
+  CALLQUEUE = 'CALLQUEUE',
+  HUNTGROUP = 'HUNTGROUP',
+  BUSY = 'BUSY',
+  NOANSWER = 'NOANSWER',
+  UNAVAILABLE = 'UNAVAILABLE',
+  UNCONDITIONAL = 'UNCONDITIONAL',
+  TIMEOFDAY = 'TIMEOFDAY'
+}
 export interface ISDKCallHistoryRecord {
   id: string;
   url?: string;
@@ -47,6 +67,7 @@ export interface ISDKCallHistoryRecord {
   isSelected?: boolean;
   isDeleted?: boolean;
   isPMR?: boolean;
+  isRead?: boolean;
   correlationIds?: unknown[];
 }
 
@@ -66,6 +87,10 @@ export interface ICallHistoryRecord {
   phoneNumber?: string;
   callbackAddress?: string;
   isSelected?: boolean;
+  durationSeconds?: number;
+  callingSpecific?: string;
+  isRead?: boolean;
+  sessionId?: string;
 }
 export interface ICallHistoryAdapter {
   refresh(ID?: string): void;
@@ -73,6 +98,8 @@ export interface ICallHistoryAdapter {
   getAll(ID?: string): Observable<ICallHistoryRecord[]>;
 
   getOne?(ID?: string): Observable<ICallHistoryRecord>;
+
+  updateMissedCalls(endTimeSessionIds: EndTimeSessionId[]): Observable<UpdateMissedCallsResponse>
 }
 
 export enum SORT {
@@ -94,7 +121,7 @@ export enum DATE {
 }
 
 export enum LIMIT {
-  DEFAULT = 20,
+  DEFAULT = 100,
 }
 
 export interface ICallbackInfo {
@@ -121,6 +148,16 @@ export interface ILinks {
   locusUrl: string;
   callbackAddress: string;
 }
+export interface ICallingSpecifics {
+  redirectionDetails?: {
+    phoneNumber?: string;
+    name?: string;
+    reason: string;
+    userId?: string;
+    isPrivate: boolean;
+    sipUrl?:string;
+  };
+}
 
 export interface IUserSession {
   id: string;
@@ -141,6 +178,8 @@ export interface IUserSession {
   isDeleted: boolean;
   isPMR: boolean;
   correlationIds: string[];
+  callingSpecifics?: ICallingSpecifics;
+  isRead?: boolean;
 }
 
 export interface IUserSessionData {
@@ -149,5 +188,19 @@ export interface IUserSessionData {
 export interface IWebexCallHistoryResponse {
   statusCode: number;
   data: IUserSessionData;
+  message: string;
+}
+
+export interface EndTimeSessionId {
+  endTime: string;
+  sessionId: string;
+}
+
+export interface UpdateMissedCallsResponse {
+  statusCode: number;
+  data: {
+    data?: string;
+    error?: string;
+  }
   message: string;
 }
