@@ -1,3 +1,10 @@
+## [1.30.14](https://github.com/webex/component-adapter-interfaces/compare/v1.30.13...v1.30.14) (2024-05-14)
+
+
+### Bug Fixes
+
+* **callHistory:** updated the type name ([1fe1eae](https://github.com/webex/component-adapter-interfaces/commit/1fe1eaecf3b55d6f69437cff096326fc359785bf))
+
 ## [1.30.13](https://github.com/webex/component-adapter-interfaces/compare/v1.30.12...v1.30.13) (2024-05-03)
 
 
