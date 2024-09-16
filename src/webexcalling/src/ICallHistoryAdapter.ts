@@ -91,6 +91,7 @@ export interface ICallHistoryRecord {
   callingSpecific?: string;
   isRead?: boolean;
   sessionId?: string;
+  lineNumber?: string;
 }
 export interface ICallHistoryAdapter {
   refresh(ID?: string): void;
@@ -134,6 +135,8 @@ export interface ISelf {
   name: string;
   incomingCallProtocols: any[];
   callbackInfo: ICallbackInfo;
+  cucmDN?: string;
+  ucmLineNumber?: number;
 }
 
 export interface IOther {
