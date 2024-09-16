@@ -1,3 +1,10 @@
+## [1.30.15](https://github.com/webex/component-adapter-interfaces/compare/v1.30.14...v1.30.15) (2024-09-16)
+
+
+### Bug Fixes
+
+* **ICallHistoryAdapter:** added multi-line type ([ed6ca7f](https://github.com/webex/component-adapter-interfaces/commit/ed6ca7f7150f6228c97f47e2d0e3f3f0a8c96e4e))
+
 ## [1.30.14](https://github.com/webex/component-adapter-interfaces/compare/v1.30.13...v1.30.14) (2024-05-14)
 
 
