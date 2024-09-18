@@ -1,3 +1,10 @@
+## [1.30.16](https://github.com/webex/component-adapter-interfaces/compare/v1.30.15...v1.30.16) (2024-09-18)
+
+
+### Bug Fixes
+
+* **Icallforward:** added the methods for attendantConsole ([f1189df](https://github.com/webex/component-adapter-interfaces/commit/f1189df849d9bb0145dedb65660600b876745b78))
+
 ## [1.30.15](https://github.com/webex/component-adapter-interfaces/compare/v1.30.14...v1.30.15) (2024-09-16)
 
 
