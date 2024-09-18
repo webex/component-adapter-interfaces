@@ -113,6 +113,7 @@ export type CallForwardAlwaysSetting = {
     destination?: string;
   };
 
+  /* this interface contains callforward and attendant Console */
 export interface ICallSettingsAdapter {
     refreshCallForward(): void;
     getCallForwardSettings(): Observable<string>;
