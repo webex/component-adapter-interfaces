@@ -1,3 +1,10 @@
+## [1.30.17](https://github.com/webex/component-adapter-interfaces/compare/v1.30.16...v1.30.17) (2024-09-20)
+
+
+### Bug Fixes
+
+* **ICallForwardAdapter:** updated the types ([fad4485](https://github.com/webex/component-adapter-interfaces/commit/fad44856c567adece8230ce280f20963bdae11ec))
+
 ## [1.30.16](https://github.com/webex/component-adapter-interfaces/compare/v1.30.15...v1.30.16) (2024-09-18)
 
 
