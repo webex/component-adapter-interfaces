@@ -117,7 +117,6 @@ export type CallForwardAlwaysSetting = {
 export interface ICallSettingsAdapter {
     refreshCallForward(): void;
     getCallForwardSettings(): Observable<string>;
-    checkAttendantConsoleFeatureToggle(): Promise<boolean>;
-    logAttendantConsoleFeatureToggleLog(): void;
+    checkAttendantConsoleFeatureToggle(): Observable<boolean>;
 }
 //# sourceMappingURL=ICallForwardAdapter.d.ts.map
