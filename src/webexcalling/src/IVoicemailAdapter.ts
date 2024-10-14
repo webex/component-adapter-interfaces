@@ -107,6 +107,16 @@ export interface IVoiceMailReadResponse {
   data: IVoiceMailReadData;
   message: string;
 }
+
+export interface IVoicemailTranscript {
+  voicemailTranscript:string
+}
+
+export interface IVoiceMailTranscriptMessage {
+  statusCode: number;
+  data: IVoicemailTranscript;
+  message: string;
+}
 export interface IVoicemailAdapter {
   refresh(): void;
 
@@ -117,4 +127,6 @@ export interface IVoicemailAdapter {
   markVoicemailRead(ID: string): Observable<IVoiceMailReadResponse>;
 
   getVoiceMessage(ID: string): Observable<IVoiceMessageContentResponse>;
+
+  getVMTranscript(ID: string): Observable<IVoiceMailTranscriptMessage>;
 }
