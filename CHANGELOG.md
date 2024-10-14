@@ -1,3 +1,10 @@
+## [1.30.18](https://github.com/webex/component-adapter-interfaces/compare/v1.30.17...v1.30.18) (2024-10-14)
+
+
+### Bug Fixes
+
+* **Ivoicemail:** added the methods for transcription ([1af95ce](https://github.com/webex/component-adapter-interfaces/commit/1af95cefaddec3babda7432f22b027eea8836c4f))
+
 ## [1.30.17](https://github.com/webex/component-adapter-interfaces/compare/v1.30.16...v1.30.17) (2024-09-20)
 
 
