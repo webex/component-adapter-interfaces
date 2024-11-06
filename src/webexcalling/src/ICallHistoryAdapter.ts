@@ -101,6 +101,8 @@ export interface ICallHistoryAdapter {
   getOne?(ID?: string): Observable<ICallHistoryRecord>;
 
   updateMissedCalls(endTimeSessionIds: EndTimeSessionId[]): Observable<UpdateMissedCallsResponse>
+  
+  deleteCallHistoryRecords(endTimeSessionIds: EndTimeSessionId[]): Observable<DeleteCallHistoryRecordsResponse>;
 }
 
 export enum SORT {
@@ -207,3 +209,12 @@ export interface UpdateMissedCallsResponse {
   }
   message: string;
 }
+
+export interface DeleteCallHistoryRecordsResponse  {
+  statusCode: number;
+  data: {
+    deleteStatusMessage?: string;
+    error?: string;
+  };
+  message: string | null;
+};
