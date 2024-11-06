@@ -1,3 +1,10 @@
+## [1.30.19](https://github.com/webex/component-adapter-interfaces/compare/v1.30.18...v1.30.19) (2024-11-06)
+
+
+### Bug Fixes
+
+* **ICallHistoryAdapter:** Added delete call log data types ([5990f21](https://github.com/webex/component-adapter-interfaces/commit/5990f219f5d71dd76e2fab2c9ad0a57d82177a9d))
+
 ## [1.30.18](https://github.com/webex/component-adapter-interfaces/compare/v1.30.17...v1.30.18) (2024-10-14)
 
 
