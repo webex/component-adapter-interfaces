@@ -1,3 +1,11 @@
+## [1.30.20](https://github.com/webex/component-adapter-interfaces/compare/v1.30.19...v1.30.20) (2024-11-13)
+
+
+### Bug Fixes
+
+* **ICallForwardAdapter:** Added CxEssential types ([fe2fc42](https://github.com/webex/component-adapter-interfaces/commit/fe2fc42a8af69fe4e8f14e4f1a29c9214f673397))
+* **ICallForwardAdapter:** Changed CxEssential types ([fd9984e](https://github.com/webex/component-adapter-interfaces/commit/fd9984ec63dafe7597fb7578218845ce39879d90))
+
 ## [1.30.19](https://github.com/webex/component-adapter-interfaces/compare/v1.30.18...v1.30.19) (2024-11-06)
 
 
