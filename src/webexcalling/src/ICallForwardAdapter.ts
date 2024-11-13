@@ -118,5 +118,6 @@ export interface ICallSettingsAdapter {
     refreshCallForward(): void;
     getCallForwardSettings(): Observable<string>;
     checkAttendantConsoleFeatureToggle(): Observable<boolean>;
+    checkCXEssentailsFeature(): Observable<boolean>;
 }
 //# sourceMappingURL=ICallForwardAdapter.d.ts.map
