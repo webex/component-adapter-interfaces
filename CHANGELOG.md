@@ -1,3 +1,10 @@
+## [1.30.21](https://github.com/webex/component-adapter-interfaces/compare/v1.30.20...v1.30.21) (2024-12-16)
+
+
+### Bug Fixes
+
+* **IVoicemailAdapter:** Added Webex calling backend types ([41b2c91](https://github.com/webex/component-adapter-interfaces/commit/41b2c912150cc78f757329de24dd56e2aab0df00))
+
 ## [1.30.20](https://github.com/webex/component-adapter-interfaces/compare/v1.30.19...v1.30.20) (2024-11-13)
 
 
