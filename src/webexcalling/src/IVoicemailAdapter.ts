@@ -129,4 +129,6 @@ export interface IVoicemailAdapter {
   getVoiceMessage(ID: string): Observable<IVoiceMessageContentResponse>;
 
   getVMTranscript(ID: string): Observable<IVoiceMailTranscriptMessage>;
+
+  getWebexCallingBackend(): Observable<boolean>;
 }
