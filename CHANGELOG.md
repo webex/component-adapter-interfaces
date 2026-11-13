@@ -1,3 +1,10 @@
+## [1.30.22](https://github.com/webex/component-adapter-interfaces/compare/v1.30.21...v1.30.22) (2026-11-13)
+
+
+### Bug Fixes
+
+* **deps:** keep build and test tools out of production ([1716505](https://github.com/webex/component-adapter-interfaces/commit/17165050423e363304287ce51b996617bd635651))
+
 ## [1.30.21](https://github.com/webex/component-adapter-interfaces/compare/v1.30.20...v1.30.21) (2024-12-16)
 
 
